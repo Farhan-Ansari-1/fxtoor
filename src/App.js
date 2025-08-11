@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ToolList from './components/ToolList';// ✅ Make sure path is correct
+import tools from './data/tools';  // ✅ Correct import path
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: '20px' }}>
+      <h1>Welcome to fxtoor 🚀</h1>
+      <p>This will be your custom tool directory for AI & cybersecurity tools.</p>
+
+      {/* ✅ Render ToolList and pass tools as props */}
+      <ToolList tools={tools} />
     </div>
   );
 }
