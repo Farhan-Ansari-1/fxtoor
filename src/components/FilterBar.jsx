@@ -1,19 +1,23 @@
 import React from 'react';
 
-export default function FilterBar({ category, setCategory, typeFilter, setTypeFilter, allCategories }) {
+const defaultTypeFilters = ['All', 'Free', 'Paid', 'Freemium'];
+
+export default function FilterBar({
+  category, setCategory, allCategories,
+  typeFilter, setTypeFilter, allTypeFilters = defaultTypeFilters,
+}) {
   return (
     <div className="flex gap-3 items-center">
       <select value={category} onChange={(e) => setCategory(e.target.value)}
         className="border rounded p-2 bg-white">
-        {allCategories.map(c => <option key={c} value={c}>{c}</option>)}
+        {allCategories.map((cat) => <option key={cat} value={cat}>{cat}</option>)}
       </select>
 
       <select value={typeFilter} onChange={(e) => setTypeFilter(e.target.value)}
         className="border rounded p-2 bg-white">
-        <option value="All">All</option>
-        <option value="Free">Free</option>
-        <option value="Paid">Paid</option>
-        <option value="Freemium">Freemium</option>
+        {allTypeFilters.map((type) => (
+          <option key={type} value={type}>{type}</option>
+        ))}
       </select>
     </div>
   );

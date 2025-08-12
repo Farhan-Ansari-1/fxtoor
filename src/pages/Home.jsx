@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import Header from './components/header.jsx';
-import Footer from './components/Footer.jsx';
-import SearchBar from './components/searchBar.jsx';
-import FilterBar from './components/FilterBar.jsx';
-import ToolList from './components/ToolList.jsx';
+import SearchBar from '../components/searchBar.jsx';
+import FilterBar from '../components/FilterBar.jsx';
+import ToolList from '../components/ToolList.jsx';
 
-function App() {
+function Home() {
   const [searchQuery, setSearchQuery] = useState('');
   const [allTools, setAllTools] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -29,7 +27,7 @@ function App() {
       }
     };
     fetchTools();
-  }, []); // Empty dependency array means this effect runs once on mount
+  }, []);
 
   const { filteredTools, allCategories } = useMemo(() => {
     if (!allTools.length) {
@@ -62,26 +60,16 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50">
-      <Header />
-      <main className="flex-grow container mx-auto px-4 py-8">
-        <div className="mb-8 p-4 bg-white rounded-lg shadow-sm border">
-          <div className="flex flex-col md:flex-row gap-4 items-center">
-            <SearchBar query={searchQuery} setQuery={setSearchQuery} />
-            <FilterBar
-              category={categoryFilter}
-              setCategory={setCategoryFilter}
-              typeFilter={typeFilter}
-              setTypeFilter={setTypeFilter}
-              allCategories={allCategories}
-            />
-          </div>
+    <div className="container mx-auto px-4 py-8">
+      <div className="mb-8 p-4 bg-white rounded-lg shadow-sm border">
+        <div className="flex flex-col md:flex-row gap-4 items-center">
+          <SearchBar query={searchQuery} setQuery={setSearchQuery} />
+          <FilterBar category={categoryFilter} setCategory={setCategoryFilter} typeFilter={typeFilter} setTypeFilter={setTypeFilter} allCategories={allCategories} />
         </div>
-        {renderContent()}
-      </main>
-      <Footer />
+      </div>
+      {renderContent()}
     </div>
   );
 }
 
-export default App;
+export default Home;
