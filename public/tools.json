@@ -1,200 +1,1586 @@
 [
-  { "name": "ChatGPT", "category": "AI - Language Models & Chatbots", "description": "A tool for Language Models & Chatbots.", "link": "", "type": "Freemium" },
-  { "name": "Claude AI", "category": "AI - Language Models & Chatbots", "description": "A tool for Language Models & Chatbots.", "link": "", "type": "Freemium" },
-  { "name": "Gemini AI (ex-Bard)", "category": "AI - Language Models & Chatbots", "description": "A tool for Language Models & Chatbots.", "link": "", "type": "Free" },
-  { "name": "Perplexity AI", "category": "AI - Language Models & Chatbots", "description": "A tool for Language Models & Chatbots.", "link": "", "type": "Freemium" },
-  { "name": "YouChat", "category": "AI - Language Models & Chatbots", "description": "A tool for Language Models & Chatbots.", "link": "", "type": "Free" },
-  { "name": "Poe AI", "category": "AI - Language Models & Chatbots", "description": "A tool for Language Models & Chatbots.", "link": "", "type": "Freemium" },
-  { "name": "Jasper AI", "category": "AI - Language Models & Chatbots", "description": "A tool for Language Models & Chatbots.", "link": "", "type": "Paid" },
-  { "name": "Copy.ai", "category": "AI - Language Models & Chatbots", "description": "A tool for Language Models & Chatbots.", "link": "", "type": "Freemium" },
-  { "name": "Writesonic", "category": "AI - Language Models & Chatbots", "description": "A tool for Language Models & Chatbots.", "link": "", "type": "Freemium" },
-  { "name": "Anyword", "category": "AI - Language Models & Chatbots", "description": "A tool for Language Models & Chatbots.", "link": "", "type": "Paid" },
-  { "name": "Rytr", "category": "AI - Language Models & Chatbots", "description": "A tool for Language Models & Chatbots.", "link": "", "type": "Freemium" },
-  { "name": "Peppertype.ai", "category": "AI - Language Models & Chatbots", "description": "A tool for Language Models & Chatbots.", "link": "", "type": "Paid" },
-  { "name": "Quillbot", "category": "AI - Language Models & Chatbots", "description": "A tool for Language Models & Chatbots.", "link": "", "type": "Freemium" },
-  { "name": "GrammarlyGO", "category": "AI - Language Models & Chatbots", "description": "A tool for Language Models & Chatbots.", "link": "", "type": "Freemium" },
-  { "name": "DeepAI Chat", "category": "AI - Language Models & Chatbots", "description": "A tool for Language Models & Chatbots.", "link": "", "type": "Free" },
-  { "name": "Midjourney", "category": "AI - Image Generation", "description": "A tool for Image Generation.", "link": "", "type": "Paid" },
-  { "name": "DALL·E 3", "category": "AI - Image Generation", "description": "A tool for Image Generation.", "link": "", "type": "Freemium" },
-  { "name": "Stable Diffusion", "category": "AI - Image Generation", "description": "A tool for Image Generation.", "link": "", "type": "Free" },
-  { "name": "Playground AI", "category": "AI - Image Generation", "description": "A tool for Image Generation.", "link": "", "type": "Freemium" },
-  { "name": "Fotor AI", "category": "AI - Image Generation", "description": "A tool for Image Generation.", "link": "", "type": "Freemium" },
-  { "name": "NightCafe Studio", "category": "AI - Image Generation", "description": "A tool for Image Generation.", "link": "", "type": "Freemium" },
-  { "name": "Leonardo AI", "category": "AI - Image Generation", "description": "A tool for Image Generation.", "link": "", "type": "Freemium" },
-  { "name": "Artbreeder", "category": "AI - Image Generation", "description": "A tool for Image Generation.", "link": "", "type": "Freemium" },
-  { "name": "RunDiffusion", "category": "AI - Image Generation", "description": "A tool for Image Generation.", "link": "", "type": "Paid" },
-  { "name": "DeepAI Image Generator", "category": "AI - Image Generation", "description": "A tool for Image Generation.", "link": "", "type": "Freemium" },
-  { "name": "Runway ML", "category": "AI - Video Tools", "description": "A tool for Video Tools.", "link": "", "type": "Freemium" },
-  { "name": "Synthesia", "category": "AI - Video Tools", "description": "A tool for Video Tools.", "link": "", "type": "Paid" },
-  { "name": "Pika Labs", "category": "AI - Video Tools", "description": "A tool for Video Tools.", "link": "", "type": "Freemium" },
-  { "name": "InVideo AI", "category": "AI - Video Tools", "description": "A tool for Video Tools.", "link": "", "type": "Freemium" },
-  { "name": "Lumen5", "category": "AI - Video Tools", "description": "A tool for Video Tools.", "link": "", "type": "Freemium" },
-  { "name": "Veed.io AI", "category": "AI - Video Tools", "description": "A tool for Video Tools.", "link": "", "type": "Freemium" },
-  { "name": "Designs.ai Video", "category": "AI - Video Tools", "description": "A tool for Video Tools.", "link": "", "type": "Paid" },
-  { "name": "Rephrase.ai", "category": "AI - Video Tools", "description": "A tool for Video Tools.", "link": "", "type": "Paid" },
-  { "name": "Elai.io", "category": "AI - Video Tools", "description": "A tool for Video Tools.", "link": "", "type": "Paid" },
-  { "name": "Colossyan Creator", "category": "AI - Video Tools", "description": "A tool for Video Tools.", "link": "", "type": "Paid" },
-  { "name": "ElevenLabs", "category": "AI - Audio & Voice", "description": "A tool for Audio & Voice.", "link": "", "type": "Freemium" },
-  { "name": "Murf.ai", "category": "AI - Audio & Voice", "description": "A tool for Audio & Voice.", "link": "", "type": "Freemium" },
-  { "name": "Speechelo", "category": "AI - Audio & Voice", "description": "A tool for Audio & Voice.", "link": "", "type": "Paid" },
-  { "name": "Play.ht", "category": "AI - Audio & Voice", "description": "A tool for Audio & Voice.", "link": "", "type": "Freemium" },
-  { "name": "Descript Overdub", "category": "AI - Audio & Voice", "description": "A tool for Audio & Voice.", "link": "", "type": "Freemium" },
-  { "name": "Listnr", "category": "AI - Audio & Voice", "description": "A tool for Audio & Voice.", "link": "", "type": "Freemium" },
-  { "name": "LOVO AI", "category": "AI - Audio & Voice", "description": "A tool for Audio & Voice.", "link": "", "type": "Freemium" },
-  { "name": "Resemble AI", "category": "AI - Audio & Voice", "description": "A tool for Audio & Voice.", "link": "", "type": "Paid" },
-  { "name": "Cleanvoice AI", "category": "AI - Audio & Voice", "description": "A tool for Audio & Voice.", "link": "", "type": "Paid" },
-  { "name": "Coqui TTS", "category": "AI - Audio & Voice", "description": "A tool for Audio & Voice.", "link": "", "type": "Free" },
-  { "name": "GitHub Copilot", "category": "AI - Code Assistants", "description": "A tool for Code Assistants.", "link": "", "type": "Paid" },
-  { "name": "Tabnine", "category": "AI - Code Assistants", "description": "A tool for Code Assistants.", "link": "", "type": "Freemium" },
-  { "name": "Codeium", "category": "AI - Code Assistants", "description": "A tool for Code Assistants.", "link": "", "type": "Free" },
-  { "name": "Replit Ghostwriter", "category": "AI - Code Assistants", "description": "A tool for Code Assistants.", "link": "", "type": "Paid" },
-  { "name": "Amazon CodeWhisperer", "category": "AI - Code Assistants", "description": "A tool for Code Assistants.", "link": "", "type": "Freemium" },
-  { "name": "Mutable AI", "category": "AI - Code Assistants", "description": "A tool for Code Assistants.", "link": "", "type": "Freemium" },
-  { "name": "DeepCode AI", "category": "AI - Code Assistants", "description": "A tool for Code Assistants.", "link": "", "type": "Freemium" },
-  { "name": "SourceAI", "category": "AI - Code Assistants", "description": "A tool for Code Assistants.", "link": "", "type": "Paid" },
-  { "name": "ChatGPT Code Interpreter", "category": "AI - Code Assistants", "description": "A tool for Code Assistants.", "link": "", "type": "Paid" },
-  { "name": "Warp AI", "category": "AI - Code Assistants", "description": "A tool for Code Assistants.", "link": "", "type": "Freemium" },
-  { "name": "Elicit.org", "category": "AI - Research & Knowledge", "description": "A tool for Research & Knowledge.", "link": "", "type": "Freemium" },
-  { "name": "Scispace", "category": "AI - Research & Knowledge", "description": "A tool for Research & Knowledge.", "link": "", "type": "Freemium" },
-  { "name": "Consensus AI", "category": "AI - Research & Knowledge", "description": "A tool for Research & Knowledge.", "link": "", "type": "Freemium" },
-  { "name": "Scholarcy", "category": "AI - Research & Knowledge", "description": "A tool for Research & Knowledge.", "link": "", "type": "Freemium" },
-  { "name": "Explainpaper", "category": "AI - Research & Knowledge", "description": "A tool for Research & Knowledge.", "link": "", "type": "Freemium" },
-  { "name": "Humata AI", "category": "AI - Research & Knowledge", "description": "A tool for Research & Knowledge.", "link": "", "type": "Freemium" },
-  { "name": "Jenni AI", "category": "AI - Research & Knowledge", "description": "A tool for Research & Knowledge.", "link": "", "type": "Freemium" },
-  { "name": "ScholarAI", "category": "AI - Research & Knowledge", "description": "A tool for Research & Knowledge.", "link": "", "type": "Freemium" },
-  { "name": "ReadCube Papers", "category": "AI - Research & Knowledge", "description": "A tool for Research & Knowledge.", "link": "", "type": "Paid" },
-  { "name": "Litmaps", "category": "AI - Research & Knowledge", "description": "A tool for Research & Knowledge.", "link": "", "type": "Freemium" },
-  { "name": "Notion AI", "category": "AI - Business & Productivity", "description": "A tool for Business & Productivity.", "link": "", "type": "Paid" },
-  { "name": "Taskade AI", "category": "AI - Business & Productivity", "description": "A tool for Business & Productivity.", "link": "", "type": "Freemium" },
-  { "name": "Motion AI", "category": "AI - Business & Productivity", "description": "A tool for Business & Productivity.", "link": "", "type": "Paid" },
-  { "name": "ClickUp AI", "category": "AI - Business & Productivity", "description": "A tool for Business & Productivity.", "link": "", "type": "Paid" },
-  { "name": "Trello AI Power-Up", "category": "AI - Business & Productivity", "description": "A tool for Business & Productivity.", "link": "", "type": "Freemium" },
-  { "name": "Fellow AI", "category": "AI - Business & Productivity", "description": "A tool for Business & Productivity.", "link": "", "type": "Paid" },
-  { "name": "Tome AI", "category": "AI - Business & Productivity", "description": "A tool for Business & Productivity.", "link": "", "type": "Freemium" },
-  { "name": "Beautiful.ai", "category": "AI - Business & Productivity", "description": "A tool for Business & Productivity.", "link": "", "type": "Freemium" },
-  { "name": "Pitch AI", "category": "AI - Business & Productivity", "description": "A tool for Business & Productivity.", "link": "", "type": "Freemium" },
-  { "name": "Canva Magic Write", "category": "AI - Business & Productivity", "description": "A tool for Business & Productivity.", "link": "", "type": "Freemium" },
-  { "name": "Uizard", "category": "AI - Design Tools", "description": "A tool for Design Tools.", "link": "", "type": "Freemium" },
-  { "name": "Figma AI", "category": "AI - Design Tools", "description": "A tool for Design Tools.", "link": "", "type": "Paid" },
-  { "name": "Khroma AI", "category": "AI - Design Tools", "description": "A tool for Design Tools.", "link": "", "type": "Free" },
-  { "name": "Fontjoy", "category": "AI - Design Tools", "description": "A tool for Design Tools.", "link": "", "type": "Free" },
-  { "name": "Remove.bg", "category": "AI - Design Tools", "description": "A tool for Design Tools.", "link": "", "type": "Freemium" },
-  { "name": "Cleanup.pictures", "category": "AI - Design Tools", "description": "A tool for Design Tools.", "link": "", "type": "Freemium" },
-  { "name": "Let's Enhance", "category": "AI - Design Tools", "description": "A tool for Design Tools.", "link": "", "type": "Freemium" },
-  { "name": "Hotpot.ai", "category": "AI - Design Tools", "description": "A tool for Design Tools.", "link": "", "type": "Freemium" },
-  { "name": "Designify", "category": "AI - Design Tools", "description": "A tool for Design Tools.", "link": "", "type": "Freemium" },
-  { "name": "Illustroke", "category": "AI - Design Tools", "description": "A tool for Design Tools.", "link": "", "type": "Paid" },
-  { "name": "Surfer SEO AI", "category": "AI - Marketing & SEO", "description": "A tool for Marketing & SEO.", "link": "", "type": "Paid" },
-  { "name": "Frase.io", "category": "AI - Marketing & SEO", "description": "A tool for Marketing & SEO.", "link": "", "type": "Paid" },
-  { "name": "Clearscope AI", "category": "AI - Marketing & SEO", "description": "A tool for Marketing & SEO.", "link": "", "type": "Paid" },
-  { "name": "NeuronWriter", "category": "AI - Marketing & SEO", "description": "A tool for Marketing & SEO.", "link": "", "type": "Paid" },
-  { "name": "MarketMuse AI", "category": "AI - Marketing & SEO", "description": "A tool for Marketing & SEO.", "link": "", "type": "Paid" },
-  { "name": "Outranking.io", "category": "AI - Marketing & SEO", "description": "A tool for Marketing & SEO.", "link": "", "type": "Paid" },
-  { "name": "Keyword Insights AI", "category": "AI - Marketing & SEO", "description": "A tool for Marketing & SEO.", "link": "", "type": "Paid" },
-  { "name": "Scalenut", "category": "AI - Marketing & SEO", "description": "A tool for Marketing & SEO.", "link": "", "type": "Paid" },
-  { "name": "Inkforall", "category": "AI - Marketing & SEO", "description": "A tool for Marketing & SEO.", "link": "", "type": "Paid" },
-  { "name": "LongShot AI", "category": "AI - Marketing & SEO", "description": "A tool for Marketing & SEO.", "link": "", "type": "Paid" },
-  { "name": "Predis.ai", "category": "AI - Social Media Tools", "description": "A tool for Social Media Tools.", "link": "", "type": "Paid" },
-  { "name": "SocialBee AI", "category": "AI - Social Media Tools", "description": "A tool for Social Media Tools.", "link": "", "type": "Paid" },
-  { "name": "Ocoya AI", "category": "AI - Social Media Tools", "description": "A tool for Social Media Tools.", "link": "", "type": "Paid" },
-  { "name": "Publer AI", "category": "AI - Social Media Tools", "description": "A tool for Social Media Tools.", "link": "", "type": "Freemium" },
-  { "name": "Postwise AI", "category": "AI - Social Media Tools", "description": "A tool for Social Media Tools.", "link": "", "type": "Paid" },
-  { "name": "ViralKit AI", "category": "AI - Social Media Tools", "description": "A tool for Social Media Tools.", "link": "", "type": "Paid" },
-  { "name": "Hootsuite OwlyWriter", "category": "AI - Social Media Tools", "description": "A tool for Social Media Tools.", "link": "", "type": "Paid" },
-  { "name": "Buffer AI Assistant", "category": "AI - Social Media Tools", "description": "A tool for Social Media Tools.", "link": "", "type": "Paid" },
-  { "name": "TweetHunter AI", "category": "AI - Social Media Tools", "description": "A tool for Social Media Tools.", "link": "", "type": "Paid" },
-  { "name": "CopyMonkey AI", "category": "AI - Social Media Tools", "description": "A tool for Social Media Tools.", "link": "", "type": "Paid" },
-  { "name": "Khanmigo (Khan Academy)", "category": "AI - Education Tools", "description": "A tool for Education Tools.", "link": "", "type": "Paid" },
-  { "name": "Quizlet Q-Chat", "category": "AI - Education Tools", "description": "A tool for Education Tools.", "link": "", "type": "Paid" },
-  { "name": "Socratic AI", "category": "AI - Education Tools", "description": "A tool for Education Tools.", "link": "", "type": "Free" },
-  { "name": "Scribe AI", "category": "AI - Education Tools", "description": "A tool for Education Tools.", "link": "", "type": "Freemium" },
-  { "name": "Teachermatic AI", "category": "AI - Education Tools", "description": "A tool for Education Tools.", "link": "", "type": "Paid" },
-  { "name": "Edpuzzle AI", "category": "AI - Education Tools", "description": "A tool for Education Tools.", "link": "", "type": "Freemium" },
-  { "name": "MagicSchool.ai", "category": "AI - Education Tools", "description": "A tool for Education Tools.", "link": "", "type": "Freemium" },
-  { "name": "Brisk Teaching", "category": "AI - Education Tools", "description": "A tool for Education Tools.", "link": "", "type": "Freemium" },
-  { "name": "Gradescope AI", "category": "AI - Education Tools", "description": "A tool for Education Tools.", "link": "", "type": "Paid" },
-  { "name": "Explain Everything AI", "category": "AI - Education Tools", "description": "A tool for Education Tools.", "link": "", "type": "Freemium" },
-  { "name": "BioGPT", "category": "AI - Medical & Science", "description": "A tool for Medical & Science.", "link": "", "type": "Free" },
-  { "name": "IBM Watson Health", "category": "AI - Medical & Science", "description": "A tool for Medical & Science.", "link": "", "type": "Paid" },
-  { "name": "PathAI", "category": "AI - Medical & Science", "description": "A tool for Medical & Science.", "link": "", "type": "Paid" },
-  { "name": "Enlitic", "category": "AI - Medical & Science", "description": "A tool for Medical & Science.", "link": "", "type": "Paid" },
-  { "name": "Paige AI", "category": "AI - Medical & Science", "description": "A tool for Medical & Science.", "link": "", "type": "Paid" },
-  { "name": "Viz.ai", "category": "AI - Medical & Science", "description": "A tool for Medical & Science.", "link": "", "type": "Paid" },
-  { "name": "DeepMind AlphaFold", "category": "AI - Medical & Science", "description": "A tool for Medical & Science.", "link": "", "type": "Free" },
-  { "name": "Butterfly Network AI", "category": "AI - Medical & Science", "description": "A tool for Medical & Science.", "link": "", "type": "Paid" },
-  { "name": "Tempus AI", "category": "AI - Medical & Science", "description": "A tool for Medical & Science.", "link": "", "type": "Paid" },
-  { "name": "Aidoc", "category": "AI - Medical & Science", "description": "A tool for Medical & Science.", "link": "", "type": "Paid" },
-  { "name": "Harvey AI (Legal)", "category": "AI - Legal & Finance", "description": "A tool for Legal & Finance.", "link": "", "type": "Paid" },
-  { "name": "Spellbook AI", "category": "AI - Legal & Finance", "description": "A tool for Legal & Finance.", "link": "", "type": "Paid" },
-  { "name": "Luminance AI", "category": "AI - Legal & Finance", "description": "A tool for Legal & Finance.", "link": "", "type": "Paid" },
-  { "name": "DoNotPay AI Lawyer", "category": "AI - Legal & Finance", "description": "A tool for Legal & Finance.", "link": "", "type": "Paid" },
-  { "name": "Lawgeex AI", "category": "AI - Legal & Finance", "description": "A tool for Legal & Finance.", "link": "", "type": "Paid" },
-  { "name": "Klarity AI", "category": "AI - Legal & Finance", "description": "A tool for Legal & Finance.", "link": "", "type": "Paid" },
-  { "name": "Kira Systems AI", "category": "AI - Legal & Finance", "description": "A tool for Legal & Finance.", "link": "", "type": "Paid" },
-  { "name": "Xtract AI", "category": "AI - Legal & Finance", "description": "A tool for Legal & Finance.", "link": "", "type": "Paid" },
-  { "name": "Zest AI (Finance)", "category": "AI - Legal & Finance", "description": "A tool for Legal & Finance.", "link": "", "type": "Paid" },
-  { "name": "Cleo AI", "category": "AI - Legal & Finance", "description": "A tool for Legal & Finance.", "link": "", "type": "Freemium" },
-  { "name": "Character.ai", "category": "AI - Creative & Fun", "description": "A tool for Creative & Fun.", "link": "", "type": "Freemium" },
-  { "name": "Inworld AI", "category": "AI - Creative & Fun", "description": "A tool for Creative & Fun.", "link": "", "type": "Freemium" },
-  { "name": "Replika AI", "category": "AI - Creative & Fun", "description": "A tool for Creative & Fun.", "link": "", "type": "Freemium" },
-  { "name": "AI Dungeon", "category": "AI - Creative & Fun", "description": "A tool for Creative & Fun.", "link": "", "type": "Freemium" },
-  { "name": "NovelAI", "category": "AI - Creative & Fun", "description": "A tool for Creative & Fun.", "link": "", "type": "Paid" },
-  { "name": "Storybird AI", "category": "AI - Creative & Fun", "description": "A tool for Creative & Fun.", "link": "", "type": "Paid" },
-  { "name": "SongR", "category": "AI - Creative & Fun", "description": "A tool for Creative & Fun.", "link": "", "type": "Freemium" },
-  { "name": "Beatoven.ai", "category": "AI - Creative & Fun", "description": "A tool for Creative & Fun.", "link": "", "type": "Freemium" },
-  { "name": "Boomy AI", "category": "AI - Creative & Fun", "description": "A tool for Creative & Fun.", "link": "", "type": "Freemium" },
-  { "name": "LyricStudio", "category": "AI - Creative & Fun", "description": "A tool for Creative & Fun.", "link": "", "type": "Freemium" },
-  { "name": "FlowGPT", "category": "AI - Miscellaneous", "description": "A tool for Miscellaneous.", "link": "", "type": "Freemium" },
-  { "name": "PromptHero", "category": "AI - Miscellaneous", "description": "A tool for Miscellaneous.", "link": "", "type": "Freemium" },
-  { "name": "PromptBase", "category": "AI - Miscellaneous", "description": "A tool for Miscellaneous.", "link": "", "type": "Paid" },
-  { "name": "AIPRM for ChatGPT", "category": "AI - Miscellaneous", "description": "A tool for Miscellaneous.", "link": "", "type": "Freemium" },
-  { "name": "FutureTools.io", "category": "AI - Miscellaneous", "description": "A tool for Miscellaneous.", "link": "", "type": "Free" },
-  { "name": "Nmap", "category": "Cybersecurity - Network Security & Scanning", "description": "A tool for Network Security & Scanning.", "link": "", "type": "Free" },
-  { "name": "Zenmap", "category": "Cybersecurity - Network Security & Scanning", "description": "A tool for Network Security & Scanning.", "link": "", "type": "Free" },
-  { "name": "Angry IP Scanner", "category": "Cybersecurity - Network Security & Scanning", "description": "A tool for Network Security & Scanning.", "link": "", "type": "Free" },
-  { "name": "Advanced IP Scanner", "category": "Cybersecurity - Network Security & Scanning", "description": "A tool for Network Security & Scanning.", "link": "", "type": "Free" },
-  { "name": "Netcat", "category": "Cybersecurity - Network Security & Scanning", "description": "A tool for Network Security & Scanning.", "link": "", "type": "Free" },
-  { "name": "OpenVAS", "category": "Cybersecurity - Network Security & Scanning", "description": "A tool for Network Security & Scanning.", "link": "", "type": "Free" },
-  { "name": "Masscan", "category": "Cybersecurity - Network Security & Scanning", "description": "A tool for Network Security & Scanning.", "link": "", "type": "Free" },
-  { "name": "Unicornscan", "category": "Cybersecurity - Network Security & Scanning", "description": "A tool for Network Security & Scanning.", "link": "", "type": "Free" },
-  { "name": "Ettercap", "category": "Cybersecurity - Network Security & Scanning", "description": "A tool for Network Security & Scanning.", "link": "", "type": "Free" },
-  { "name": "DNSdumpster", "category": "Cybersecurity - Network Security & Scanning", "description": "A tool for Network Security & Scanning.", "link": "", "type": "Free" },
-  { "name": "Metasploit Framework", "category": "Cybersecurity - Penetration Testing Frameworks", "description": "A tool for Penetration Testing Frameworks.", "link": "", "type": "Freemium" },
-  { "name": "Cobalt Strike", "category": "Cybersecurity - Penetration Testing Frameworks", "description": "A tool for Penetration Testing Frameworks.", "link": "", "type": "Paid" },
-  { "name": "Empire", "category": "Cybersecurity - Penetration Testing Frameworks", "description": "A tool for Penetration Testing Frameworks.", "link": "", "type": "Free" },
-  { "name": "BeEF (Browser Exploitation Framework)", "category": "Cybersecurity - Penetration Testing Frameworks", "description": "A tool for Penetration Testing Frameworks.", "link": "", "type": "Free" },
-  { "name": "Core Impact", "category": "Cybersecurity - Penetration Testing Frameworks", "description": "A tool for Penetration Testing Frameworks.", "link": "", "type": "Paid" },
-  { "name": "Nessus", "category": "Cybersecurity - Vulnerability Assessment", "description": "A tool for Vulnerability Assessment.", "link": "", "type": "Freemium" },
-  { "name": "QualysGuard", "category": "Cybersecurity - Vulnerability Assessment", "description": "A tool for Vulnerability Assessment.", "link": "", "type": "Paid" },
-  { "name": "Nexpose", "category": "Cybersecurity - Vulnerability Assessment", "description": "A tool for Vulnerability Assessment.", "link": "", "type": "Paid" },
-  { "name": "Acunetix", "category": "Cybersecurity - Vulnerability Assessment", "description": "A tool for Vulnerability Assessment.", "link": "", "type": "Paid" },
-  { "name": "Burp Suite", "category": "Cybersecurity - Vulnerability Assessment", "description": "A tool for Vulnerability Assessment.", "link": "", "type": "Freemium" },
-  { "name": "OWASP ZAP", "category": "Cybersecurity - Web Application Security", "description": "A tool for Web Application Security.", "link": "", "type": "Free" },
-  { "name": "Wapiti", "category": "Cybersecurity - Web Application Security", "description": "A tool for Web Application Security.", "link": "", "type": "Free" },
-  { "name": "Nikto", "category": "Cybersecurity - Web Application Security", "description": "A tool for Web Application Security.", "link": "", "type": "Free" },
-  { "name": "Arachni", "category": "Cybersecurity - Web Application Security", "description": "A tool for Web Application Security.", "link": "", "type": "Free" },
-  { "name": "Vega Scanner", "category": "Cybersecurity - Web Application Security", "description": "A tool for Web Application Security.", "link": "", "type": "Free" },
-  { "name": "Aircrack-ng", "category": "Cybersecurity - Wireless & Network Hacking", "description": "A tool for Wireless & Network Hacking.", "link": "", "type": "Free" },
-  { "name": "Kismet", "category": "Cybersecurity - Wireless & Network Hacking", "description": "A tool for Wireless & Network Hacking.", "link": "", "type": "Free" },
-  { "name": "Wireshark", "category": "Cybersecurity - Wireless & Network Hacking", "description": "A tool for Wireless & Network Hacking.", "link": "", "type": "Free" },
-  { "name": "CommView for WiFi", "category": "Cybersecurity - Wireless & Network Hacking", "description": "A tool for Wireless & Network Hacking.", "link": "", "type": "Paid" },
-  { "name": "Reaver", "category": "Cybersecurity - Wireless & Network Hacking", "description": "A tool for Wireless & Network Hacking.", "link": "", "type": "Free" },
-  { "name": "John the Ripper", "category": "Cybersecurity - Password Cracking & Recovery", "description": "A tool for Password Cracking & Recovery.", "link": "", "type": "Freemium" },
-  { "name": "Hashcat", "category": "Cybersecurity - Password Cracking & Recovery", "description": "A tool for Password Cracking & Recovery.", "link": "", "type": "Free" },
-  { "name": "Hydra", "category": "Cybersecurity - Password Cracking & Recovery", "description": "A tool for Password Cracking & Recovery.", "link": "", "type": "Free" },
-  { "name": "Cain & Abel", "category": "Cybersecurity - Password Cracking & Recovery", "description": "A tool for Password Cracking & Recovery.", "link": "", "type": "Free" },
-  { "name": "Ophcrack", "category": "Cybersecurity - Password Cracking & Recovery", "description": "A tool for Password Cracking & Recovery.", "link": "", "type": "Free" },
-  { "name": "Autopsy", "category": "Cybersecurity - Digital Forensics & Incident Response", "description": "A tool for Digital Forensics & Incident Response.", "link": "", "type": "Free" },
-  { "name": "FTK Imager", "category": "Cybersecurity - Digital Forensics & Incident Response", "description": "A tool for Digital Forensics & Incident Response.", "link": "", "type": "Free" },
-  { "name": "Volatility", "category": "Cybersecurity - Digital Forensics & Incident Response", "description": "A tool for Digital Forensics & Incident Response.", "link": "", "type": "Free" },
-  { "name": "Cuckoo Sandbox", "category": "Cybersecurity - Malware Analysis", "description": "A tool for Malware Analysis.", "link": "", "type": "Free" },
-  { "name": "REMnux", "category": "Cybersecurity - Malware Analysis", "description": "A tool for Malware Analysis.", "link": "", "type": "Free" },
-  { "name": "PEiD", "category": "Cybersecurity - Malware Analysis", "description": "A tool for Malware Analysis.", "link": "", "type": "Free" },
-  { "name": "Maltego", "category": "Cybersecurity - Malware Analysis", "description": "A tool for Malware Analysis.", "link": "", "type": "Freemium" },
-  { "name": "Ghidra", "category": "Cybersecurity - Malware Analysis", "description": "A tool for Malware Analysis.", "link": "", "type": "Free" },
-  { "name": "ScoutSuite", "category": "Cybersecurity - Cloud & Container Security", "description": "A tool for Cloud & Container Security.", "link": "", "type": "Free" },
-  { "name": "Trivy", "category": "Cybersecurity - Cloud & Container Security", "description": "A tool for Cloud & Container Security.", "link": "", "type": "Free" },
-  { "name": "Anchore", "category": "Cybersecurity - Cloud & Container Security", "description": "A tool for Cloud & Container Security.", "link": "", "type": "Freemium" },
-  { "name": "CloudSploit", "category": "Cybersecurity - Cloud & Container Security", "description": "A tool for Cloud & Container Security.", "link": "", "type": "Freemium" },
-  { "name": "Falco", "category": "Cybersecurity - Cloud & Container Security", "description": "A tool for Cloud & Container Security.", "link": "", "type": "Free" }
+  {
+    "name": "ChatGPT",
+    "mainCategory": "AI",
+    "subCategory": "Language Models & Chatbots",
+    "description": "A powerful conversational AI by OpenAI that can generate human-like text, answer questions, and assist with a wide range of tasks.",
+    "link": "https://chat.openai.com",
+    "type": "Freemium"
+  },
+  {
+    "name": "Claude AI",
+    "mainCategory": "AI",
+    "subCategory": "Language Models & Chatbots",
+    "description": "A next-generation AI assistant from Anthropic, designed to be helpful, harmless, and honest.",
+    "link": "https://claude.ai",
+    "type": "Freemium"
+  },
+  {
+    "name": "Gemini AI (ex-Bard)",
+    "mainCategory": "AI",
+    "subCategory": "Language Models & Chatbots",
+    "description": "Google's creative and helpful collaborator, powered by their latest models to supercharge your imagination and productivity.",
+    "link": "https://gemini.google.com",
+    "type": "Free"
+  },
+  {
+    "name": "Perplexity AI",
+    "mainCategory": "AI",
+    "subCategory": "Language Models & Chatbots",
+    "description": "An AI-powered answer engine that provides direct, accurate answers to questions with cited sources.",
+    "link": "https://www.perplexity.ai",
+    "type": "Freemium"
+  },
+  {
+    "name": "YouChat",
+    "mainCategory": "AI",
+    "subCategory": "Language Models & Chatbots",
+    "description": "A conversational AI search engine that provides summarized answers to questions with links to sources.",
+    "link": "https://you.com/chat",
+    "type": "Free"
+  },
+  {
+    "name": "Poe AI",
+    "mainCategory": "AI",
+    "subCategory": "Language Models & Chatbots",
+    "description": "An app that provides access to a variety of AI chatbots and language models, including those from OpenAI and Anthropic.",
+    "link": "https://poe.com",
+    "type": "Freemium"
+  },
+  {
+    "name": "Jasper AI",
+    "mainCategory": "AI",
+    "subCategory": "Language Models & Chatbots",
+    "description": "An AI content platform that helps teams create high-quality content for marketing, sales, and more.",
+    "link": "https://www.jasper.ai",
+    "type": "Paid"
+  },
+  {
+    "name": "Copy.ai",
+    "mainCategory": "AI",
+    "subCategory": "Language Models & Chatbots",
+    "description": "An AI-powered copywriter that generates marketing copy and other content for businesses.",
+    "link": "https://www.copy.ai",
+    "type": "Freemium"
+  },
+  {
+    "name": "Writesonic",
+    "mainCategory": "AI",
+    "subCategory": "Language Models & Chatbots",
+    "description": "An AI writer that creates SEO-friendly content for blogs, ads, emails, and websites.",
+    "link": "https://writesonic.com",
+    "type": "Freemium"
+  },
+  {
+    "name": "Anyword",
+    "mainCategory": "AI",
+    "subCategory": "Language Models & Chatbots",
+    "description": "A data-driven copywriting AI that helps marketers create effective ad copy, landing pages, and social media posts.",
+    "link": "https://anyword.com",
+    "type": "Paid"
+  },
+  {
+    "name": "Rytr",
+    "mainCategory": "AI",
+    "subCategory": "Language Models & Chatbots",
+    "description": "An AI writing assistant that helps you create high-quality content for various use cases in just a few seconds.",
+    "link": "https://rytr.me/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Peppertype.ai",
+    "mainCategory": "AI",
+    "subCategory": "Language Models & Chatbots",
+    "description": "A virtual content assistant that helps you generate quality content ideas and copy in seconds.",
+    "link": "https://www.peppertype.ai/",
+    "type": "Paid"
+  },
+  {
+    "name": "Quillbot",
+    "mainCategory": "AI",
+    "subCategory": "Language Models & Chatbots",
+    "description": "An AI-powered paraphrasing tool that enhances writing with a grammar checker, summarizer, and citation generator.",
+    "link": "https://quillbot.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "GrammarlyGO",
+    "mainCategory": "AI",
+    "subCategory": "Language Models & Chatbots",
+    "description": "An AI-powered writing assistant from Grammarly that helps with ideation, composition, rewriting, and replying to text.",
+    "link": "https://www.grammarly.com/grammarlygo",
+    "type": "Freemium"
+  },
+  {
+    "name": "DeepAI Chat",
+    "mainCategory": "AI",
+    "subCategory": "Language Models & Chatbots",
+    "description": "A free and open-source AI chat model that can be used for a variety of conversational tasks.",
+    "link": "https://deepai.org/chat",
+    "type": "Free"
+  },
+  {
+    "name": "Midjourney",
+    "mainCategory": "AI",
+    "subCategory": "Image Generation",
+    "description": "An independent research lab that produces a proprietary AI program that creates images from textual descriptions.",
+    "link": "https://www.midjourney.com",
+    "type": "Paid"
+  },
+  {
+    "name": "DALL·E 3",
+    "mainCategory": "AI",
+    "subCategory": "Image Generation",
+    "description": "An AI system by OpenAI that can create realistic images and art from a description in natural language.",
+    "link": "https://openai.com/dall-e-3",
+    "type": "Freemium"
+  },
+  {
+    "name": "Stable Diffusion",
+    "mainCategory": "AI",
+    "subCategory": "Image Generation",
+    "description": "A deep learning, text-to-image model released by Stability AI, primarily used to generate detailed images from text descriptions.",
+    "link": "https://stability.ai/stablediffusion",
+    "type": "Free"
+  },
+  {
+    "name": "Playground AI",
+    "mainCategory": "AI",
+    "subCategory": "Image Generation",
+    "description": "A free-to-use online AI image creator that allows users to create and share art, social media posts, and more.",
+    "link": "https://playground.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Fotor AI",
+    "mainCategory": "AI",
+    "subCategory": "Image Generation",
+    "description": "An online photo editor and AI image generator that turns text prompts into images in seconds.",
+    "link": "https://www.fotor.com/features/ai-image-generator/",
+    "type": "Freemium"
+  },
+  {
+    "name": "NightCafe Studio",
+    "mainCategory": "AI",
+    "subCategory": "Image Generation",
+    "description": "An AI Art Generator app with various algorithms, allowing users to create, share, and purchase prints of their artwork.",
+    "link": "https://creator.nightcafe.studio",
+    "type": "Freemium"
+  },
+  {
+    "name": "Leonardo AI",
+    "mainCategory": "AI",
+    "subCategory": "Image Generation",
+    "description": "A platform for generating high-quality art and assets for creative projects, especially for gaming and concept art.",
+    "link": "https://leonardo.ai",
+    "type": "Freemium"
+  },
+  {
+    "name": "Artbreeder",
+    "mainCategory": "AI",
+    "subCategory": "Image Generation",
+    "description": "A collaborative, machine learning-based art website that allows users to generate and modify images by 'breeding' them together.",
+    "link": "https://www.artbreeder.com",
+    "type": "Freemium"
+  },
+  {
+    "name": "RunDiffusion",
+    "mainCategory": "AI",
+    "subCategory": "Image Generation",
+    "description": "A cloud-based platform that provides easy access to Stable Diffusion models without requiring local hardware.",
+    "link": "https://rundiffusion.com",
+    "type": "Paid"
+  },
+  {
+    "name": "DeepAI Image Generator",
+    "mainCategory": "AI",
+    "subCategory": "Image Generation",
+    "description": "An API and online tool for generating unique images from text descriptions using AI.",
+    "link": "https://deepai.org/machine-learning-model/text2img",
+    "type": "Freemium"
+  },
+  {
+    "name": "Runway ML",
+    "mainCategory": "AI",
+    "subCategory": "Video Tools",
+    "description": "An applied AI research company shaping the next era of art, entertainment and human creativity with its suite of video editing tools.",
+    "link": "https://runwayml.com",
+    "type": "Freemium"
+  },
+  {
+    "name": "Synthesia",
+    "mainCategory": "AI",
+    "subCategory": "Video Tools",
+    "description": "An AI video generation platform that allows users to create professional videos with AI avatars and voiceovers in minutes.",
+    "link": "https://www.synthesia.io",
+    "type": "Paid"
+  },
+  {
+    "name": "Pika Labs",
+    "mainCategory": "AI",
+    "subCategory": "Video Tools",
+    "description": "An idea-to-video platform that brings your creativity to motion with AI. Generates videos from text or images.",
+    "link": "https://pika.art",
+    "type": "Freemium"
+  },
+  {
+    "name": "InVideo AI",
+    "mainCategory": "AI",
+    "subCategory": "Video Tools",
+    "description": "An online video editor with AI-powered features to create professional-looking videos from text prompts, scripts, or blog posts.",
+    "link": "https://invideo.io",
+    "type": "Freemium"
+  },
+  {
+    "name": "Lumen5",
+    "mainCategory": "AI",
+    "subCategory": "Video Tools",
+    "description": "An AI-powered video creation platform that transforms blog posts and text content into engaging social media videos.",
+    "link": "https://lumen5.com",
+    "type": "Freemium"
+  },
+  {
+    "name": "Veed.io AI",
+    "mainCategory": "AI",
+    "subCategory": "Video Tools",
+    "description": "An online video suite with a range of AI tools for editing, transcribing, adding subtitles, and creating videos.",
+    "link": "https://www.veed.io/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Designs.ai Video",
+    "mainCategory": "AI",
+    "subCategory": "Video Tools",
+    "description": "Part of the Designs.ai suite, this tool uses AI to quickly turn text into fully edited videos with voiceovers and music.",
+    "link": "https://designs.ai/",
+    "type": "Paid"
+  },
+  {
+    "name": "Rephrase.ai",
+    "mainCategory": "AI",
+    "subCategory": "Video Tools",
+    "description": "Now part of Adobe, this tool specialized in creating hyper-personalized videos with AI avatars for marketing and communication.",
+    "link": "https://www.adobe.com/express/discover/generative-ai-video",
+    "type": "Paid"
+  },
+  {
+    "name": "Elai.io",
+    "mainCategory": "AI",
+    "subCategory": "Video Tools",
+    "description": "An AI video generation platform that allows you to build customized AI videos with a presenter from just text.",
+    "link": "https://elai.io/",
+    "type": "Paid"
+  },
+  {
+    "name": "Colossyan Creator",
+    "mainCategory": "AI",
+    "subCategory": "Video Tools",
+    "description": "An AI video platform that helps create videos for workplace learning and communication, featuring AI actors and text-to-video capabilities.",
+    "link": "https://www.colossyan.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "ElevenLabs",
+    "mainCategory": "AI",
+    "subCategory": "Audio & Voice",
+    "description": "A voice technology research company that provides advanced text-to-speech and voice cloning software with realistic, human-like voices.",
+    "link": "https://elevenlabs.io/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Murf.ai",
+    "mainCategory": "AI",
+    "subCategory": "Audio & Voice",
+    "description": "An AI voice generator that creates studio-quality voiceovers for podcasts, videos, and professional presentations.",
+    "link": "https://murf.ai/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Speechelo",
+    "mainCategory": "AI",
+    "subCategory": "Audio & Voice",
+    "description": "A text-to-speech software that instantly transforms any text into a 100% human-sounding voiceover with only 3 clicks.",
+    "link": "https://speechelo.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Play.ht",
+    "mainCategory": "AI",
+    "subCategory": "Audio & Voice",
+    "description": "An AI-powered text-to-voice generator that provides realistic AI voices and allows for creating audio versions of text content.",
+    "link": "https://play.ht/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Descript Overdub",
+    "mainCategory": "AI",
+    "subCategory": "Audio & Voice",
+    "description": "A feature within Descript that lets you create an ultra-realistic clone of your own voice to generate text-to-speech audio.",
+    "link": "https://www.descript.com/overdub",
+    "type": "Freemium"
+  },
+  {
+    "name": "Listnr",
+    "mainCategory": "AI",
+    "subCategory": "Audio & Voice",
+    "description": "An AI voice generator that converts text to speech, allowing users to create realistic voiceovers for videos, podcasts, and more.",
+    "link": "https://www.listnr.ai/",
+    "type": "Freemium"
+  },
+  {
+    "name": "LOVO AI",
+    "mainCategory": "AI",
+    "subCategory": "Audio & Voice",
+    "description": "An award-winning AI voice generator and text-to-speech platform with a wide range of realistic voices for various content types.",
+    "link": "https://lovo.ai/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Resemble AI",
+    "mainCategory": "AI",
+    "subCategory": "Audio & Voice",
+    "description": "A complete generative voice AI toolkit that allows you to clone voices, create custom voices, and generate speech for various applications.",
+    "link": "https://www.resemble.ai/",
+    "type": "Paid"
+  },
+  {
+    "name": "Cleanvoice AI",
+    "mainCategory": "AI",
+    "subCategory": "Audio & Voice",
+    "description": "An AI tool that automatically edits podcast episodes by removing filler sounds, stuttering, and mouth sounds.",
+    "link": "https://cleanvoice.ai/",
+    "type": "Paid"
+  },
+  {
+    "name": "Coqui TTS",
+    "mainCategory": "AI",
+    "subCategory": "Audio & Voice",
+    "description": "An open-source text-to-speech library that allows for creating realistic, emotional voices for various applications.",
+    "link": "https://coqui.ai/",
+    "type": "Free"
+  },
+  {
+    "name": "GitHub Copilot",
+    "mainCategory": "AI",
+    "subCategory": "Code Assistants",
+    "description": "An AI pair programmer that suggests whole lines or entire functions right inside your editor.",
+    "link": "https://github.com/features/copilot",
+    "type": "Paid"
+  },
+  {
+    "name": "Tabnine",
+    "mainCategory": "AI",
+    "subCategory": "Code Assistants",
+    "description": "An AI code completion assistant that learns from your code patterns and provides personalized suggestions.",
+    "link": "https://www.tabnine.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Codeium",
+    "mainCategory": "AI",
+    "subCategory": "Code Assistants",
+    "description": "A free AI-powered toolkit for developers that provides code completion, chat, and search capabilities in the IDE.",
+    "link": "https://codeium.com/",
+    "type": "Free"
+  },
+  {
+    "name": "Replit Ghostwriter",
+    "mainCategory": "AI",
+    "subCategory": "Code Assistants",
+    "description": "An AI-powered coding assistant integrated into the Replit online IDE to help write, debug, and explain code.",
+    "link": "https://replit.com/ghostwriter",
+    "type": "Paid"
+  },
+  {
+    "name": "Amazon CodeWhisperer",
+    "mainCategory": "AI",
+    "subCategory": "Code Assistants",
+    "description": "An AI coding companion from AWS that generates code suggestions, from snippets to full functions, in real time.",
+    "link": "https://aws.amazon.com/codewhisperer/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Mutable AI",
+    "mainCategory": "AI",
+    "subCategory": "Code Assistants",
+    "description": "An AI-accelerated software development tool that helps with refactoring, documentation, and building features faster.",
+    "link": "https://mutable.ai/",
+    "type": "Freemium"
+  },
+  {
+    "name": "DeepCode AI",
+    "mainCategory": "AI",
+    "subCategory": "Code Assistants",
+    "description": "Now part of Snyk, this AI-powered tool finds security vulnerabilities in your code in real-time.",
+    "link": "https://snyk.io/product/snyk-code/",
+    "type": "Freemium"
+  },
+  {
+    "name": "SourceAI",
+    "mainCategory": "AI",
+    "subCategory": "Code Assistants",
+    "description": "An AI-powered tool that can generate, modify, and explain code in any programming language.",
+    "link": "https://sourceai.dev/",
+    "type": "Paid"
+  },
+  {
+    "name": "ChatGPT Code Interpreter",
+    "mainCategory": "AI",
+    "subCategory": "Code Assistants",
+    "description": "A feature within ChatGPT Plus that allows it to run Python code, analyze data, create charts, edit files, and perform mathematical calculations.",
+    "link": "https://openai.com/blog/chatgpt-plugins#advanced-data-analysis",
+    "type": "Paid"
+  },
+  {
+    "name": "Warp AI",
+    "mainCategory": "AI",
+    "subCategory": "Code Assistants",
+    "description": "An AI-powered assistant integrated into the Warp terminal to help debug errors, look up commands, and write scripts.",
+    "link": "https://www.warp.dev/warp-ai",
+    "type": "Freemium"
+  },
+  {
+    "name": "Elicit.org",
+    "mainCategory": "AI",
+    "subCategory": "Research & Knowledge",
+    "description": "An AI research assistant that uses language models to help you automate research workflows, like parts of a literature review.",
+    "link": "https://elicit.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Scispace",
+    "mainCategory": "AI",
+    "subCategory": "Research & Knowledge",
+    "description": "A platform to discover, read, and understand research papers. It offers features like AI-powered explanations and summaries.",
+    "link": "https://scispace.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Consensus AI",
+    "mainCategory": "AI",
+    "subCategory": "Research & Knowledge",
+    "description": "An AI search engine for research that extracts and distills findings directly from scientific papers.",
+    "link": "https://consensus.app/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Scholarcy",
+    "mainCategory": "AI",
+    "subCategory": "Research & Knowledge",
+    "description": "An online article summarizer tool that reads research articles, reports, and book chapters in seconds and breaks them down into bite-sized sections.",
+    "link": "https://www.scholarcy.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Explainpaper",
+    "mainCategory": "AI",
+    "subCategory": "Research & Knowledge",
+    "description": "A tool to make research papers easier to read by allowing users to highlight confusing text and get an AI-generated explanation.",
+    "link": "https://www.explainpaper.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Humata AI",
+    "mainCategory": "AI",
+    "subCategory": "Research & Knowledge",
+    "description": "A 'ChatGPT for your files' that allows you to ask questions and get answers about any document you upload.",
+    "link": "https://www.humata.ai/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Jenni AI",
+    "mainCategory": "AI",
+    "subCategory": "Research & Knowledge",
+    "description": "An AI writing assistant that helps students and researchers with autocompletion, citation, and paraphrasing for academic papers.",
+    "link": "https://jenni.ai/",
+    "type": "Freemium"
+  },
+  {
+    "name": "ScholarAI",
+    "mainCategory": "AI",
+    "subCategory": "Research & Knowledge",
+    "description": "A tool that provides access to a database of peer-reviewed articles and research papers, helping to find reliable information and data.",
+    "link": "https://www.scholarai.io/",
+    "type": "Freemium"
+  },
+  {
+    "name": "ReadCube Papers",
+    "mainCategory": "AI",
+    "subCategory": "Research & Knowledge",
+    "description": "A reference manager and citation tool that helps researchers discover, organize, read, annotate, and cite scholarly literature.",
+    "link": "https://www.papersapp.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Litmaps",
+    "mainCategory": "AI",
+    "subCategory": "Research & Knowledge",
+    "description": "A research discovery tool that creates interactive maps of academic literature, helping you find key papers and explore the research landscape.",
+    "link": "https://www.litmaps.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Notion AI",
+    "mainCategory": "AI",
+    "subCategory": "Business & Productivity",
+    "description": "An AI assistant integrated into the Notion workspace that helps you write, brainstorm, edit, summarize, and more, right within your notes and docs.",
+    "link": "https://www.notion.so/product/ai",
+    "type": "Paid"
+  },
+  {
+    "name": "Taskade AI",
+    "mainCategory": "AI",
+    "subCategory": "Business & Productivity",
+    "description": "An AI-powered productivity platform for teams that helps generate task lists, mind maps, workflows, and content within a unified workspace.",
+    "link": "https://www.taskade.com/ai",
+    "type": "Freemium"
+  },
+  {
+    "name": "Motion AI",
+    "mainCategory": "AI",
+    "subCategory": "Business & Productivity",
+    "description": "An intelligent calendar and project management tool that uses AI to automatically plan your day, schedule tasks, and manage your to-do list.",
+    "link": "https://www.usemotion.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "ClickUp AI",
+    "mainCategory": "AI",
+    "subCategory": "Business & Productivity",
+    "description": "An AI assistant built into the ClickUp platform to help summarize documents, generate action items, write content, and automate tasks.",
+    "link": "https://clickup.com/ai",
+    "type": "Paid"
+  },
+  {
+    "name": "Trello AI Power-Up",
+    "mainCategory": "AI",
+    "subCategory": "Business & Productivity",
+    "description": "Powered by Atlassian Intelligence, this Trello feature helps summarize card content, generate ideas, and write drafts to boost team productivity.",
+    "link": "https://trello.com/atlassian-intelligence",
+    "type": "Freemium"
+  },
+  {
+    "name": "Fellow AI",
+    "mainCategory": "AI",
+    "subCategory": "Business & Productivity",
+    "description": "An AI meeting copilot that automatically records, transcribes, and summarizes your meetings, creating action items and follow-ups.",
+    "link": "https://fellow.app/ai/",
+    "type": "Paid"
+  },
+  {
+    "name": "Tome AI",
+    "mainCategory": "AI",
+    "subCategory": "Business & Productivity",
+    "description": "An AI-powered storytelling format for creating compelling presentations, documents, and narratives from a simple text prompt.",
+    "link": "https://tome.app/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Beautiful.ai",
+    "mainCategory": "AI",
+    "subCategory": "Business & Productivity",
+    "description": "An AI-powered presentation maker that automatically applies design principles to your slides, helping you create beautiful presentations quickly.",
+    "link": "https://www.beautiful.ai/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Pitch AI",
+    "mainCategory": "AI",
+    "subCategory": "Business & Productivity",
+    "description": "An AI-powered presentation generator within Pitch that helps create first drafts, edit slides, and find visuals instantly.",
+    "link": "https://pitch.com/ai",
+    "type": "Freemium"
+  },
+  {
+    "name": "Canva Magic Write",
+    "mainCategory": "AI",
+    "subCategory": "Business & Productivity",
+    "description": "An AI text generator within Canva that helps you write everything from social media captions to presentation text in seconds.",
+    "link": "https://www.canva.com/magic-write/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Uizard",
+    "mainCategory": "AI",
+    "subCategory": "Design Tools",
+    "description": "An AI-powered design tool for creating wireframes, mockups, and prototypes from text prompts or hand-drawn sketches.",
+    "link": "https://uizard.io/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Figma AI",
+    "mainCategory": "AI",
+    "subCategory": "Design Tools",
+    "description": "A set of AI-powered features within Figma to help automate design tasks, generate ideas, and streamline workflows.",
+    "link": "https://www.figma.com/ai/",
+    "type": "Paid"
+  },
+  {
+    "name": "Khroma AI",
+    "mainCategory": "AI",
+    "subCategory": "Design Tools",
+    "description": "An AI color tool for designers that learns your preferences and generates limitless color palettes for you to discover, search, and save.",
+    "link": "http://khroma.co/",
+    "type": "Free"
+  },
+  {
+    "name": "Fontjoy",
+    "mainCategory": "AI",
+    "subCategory": "Design Tools",
+    "description": "An AI tool that helps designers choose the best font combinations. Mix and match fonts for the perfect pairing.",
+    "link": "https://fontjoy.com/",
+    "type": "Free"
+  },
+  {
+    "name": "Remove.bg",
+    "mainCategory": "AI",
+    "subCategory": "Design Tools",
+    "description": "An online tool that uses AI to automatically remove the background from any image in seconds.",
+    "link": "https://www.remove.bg/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Cleanup.pictures",
+    "mainCategory": "AI",
+    "subCategory": "Design Tools",
+    "description": "An AI-powered photo editing tool that allows you to remove any unwanted object, defect, people, or text from your pictures in seconds.",
+    "link": "https://cleanup.pictures/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Let's Enhance",
+    "mainCategory": "AI",
+    "subCategory": "Design Tools",
+    "description": "An AI image enhancer and upscaler that improves image quality, resolution, and clarity without losing detail.",
+    "link": "https://letsenhance.io/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Hotpot.ai",
+    "mainCategory": "AI",
+    "subCategory": "Design Tools",
+    "description": "A platform with a collection of AI tools to help you create graphics, pictures, and text for various creative tasks.",
+    "link": "https://hotpot.ai/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Designify",
+    "mainCategory": "AI",
+    "subCategory": "Design Tools",
+    "description": "An AI-powered tool that automatically removes backgrounds, enhances colors, and adds smart shadows to create professional product photos.",
+    "link": "https://www.designify.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Illustroke",
+    "mainCategory": "AI",
+    "subCategory": "Design Tools",
+    "description": "A text-to-SVG illustration generator that creates high-quality vector graphics from simple text prompts.",
+    "link": "https://illustroke.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Surfer SEO AI",
+    "mainCategory": "AI",
+    "subCategory": "Marketing & SEO",
+    "description": "A content intelligence tool that helps you write, optimize, and rank your articles higher in search engine results.",
+    "link": "https://surferseo.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Frase.io",
+    "mainCategory": "AI",
+    "subCategory": "Marketing & SEO",
+    "description": "An AI-powered tool that helps you research, write, and optimize high-quality SEO content in a fraction of the time.",
+    "link": "https://www.frase.io/",
+    "type": "Paid"
+  },
+  {
+    "name": "Clearscope AI",
+    "mainCategory": "AI",
+    "subCategory": "Marketing & SEO",
+    "description": "A content optimization platform that provides data-driven recommendations to help you create content that performs well in search.",
+    "link": "https://www.clearscope.io/",
+    "type": "Paid"
+  },
+  {
+    "name": "NeuronWriter",
+    "mainCategory": "AI",
+    "subCategory": "Marketing & SEO",
+    "description": "A content optimization tool with NLP-driven recommendations to help you plan and write content with high ranking potential.",
+    "link": "https://neuronwriter.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "MarketMuse AI",
+    "mainCategory": "AI",
+    "subCategory": "Marketing & SEO",
+    "description": "An AI-powered content planning and optimization software that helps you build content strategies and improve content quality.",
+    "link": "https://www.marketmuse.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Outranking.io",
+    "mainCategory": "AI",
+    "subCategory": "Marketing & SEO",
+    "description": "An AI-powered platform for creating and optimizing SEO content, from research and outlining to writing and analysis.",
+    "link": "https://www.outranking.io/",
+    "type": "Paid"
+  },
+  {
+    "name": "Keyword Insights AI",
+    "mainCategory": "AI",
+    "subCategory": "Marketing & SEO",
+    "description": "A tool that automates keyword clustering and content brief generation, helping you turn keywords into a content strategy.",
+    "link": "https://keywordinsights.ai/",
+    "type": "Paid"
+  },
+  {
+    "name": "Scalenut",
+    "mainCategory": "AI",
+    "subCategory": "Marketing & SEO",
+    "description": "An AI-powered content marketing platform that helps you plan, research, create, and optimize long-form content.",
+    "link": "https://www.scalenut.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Inkforall",
+    "mainCategory": "AI",
+    "subCategory": "Marketing & SEO",
+    "description": "An AI-powered content marketing platform that combines AI writing, SEO optimization, and content planning.",
+    "link": "https://inkforall.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "LongShot AI",
+    "mainCategory": "AI",
+    "subCategory": "Marketing & SEO",
+    "description": "An AI writing assistant that helps create long-form, factual, and SEO-friendly content from keywords or topics.",
+    "link": "https://www.longshot.ai/",
+    "type": "Paid"
+  },
+  {
+    "name": "Predis.ai",
+    "mainCategory": "AI",
+    "subCategory": "Social Media Tools",
+    "description": "An AI-powered social media marketing tool that generates posts, captions, and hashtags, and suggests content ideas.",
+    "link": "https://predis.ai/",
+    "type": "Paid"
+  },
+  {
+    "name": "SocialBee AI",
+    "mainCategory": "AI",
+    "subCategory": "Social Media Tools",
+    "description": "An AI Post Generator within the SocialBee platform to help create engaging social media content and variations.",
+    "link": "https://socialbee.com/ai-post-generator/",
+    "type": "Paid"
+  },
+  {
+    "name": "Ocoya AI",
+    "mainCategory": "AI",
+    "subCategory": "Social Media Tools",
+    "description": "A platform to create and schedule social media content faster with AI-powered copywriting and image generation.",
+    "link": "https://www.ocoya.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Publer AI",
+    "mainCategory": "AI",
+    "subCategory": "Social Media Tools",
+    "description": "An AI assistant integrated into the Publer social media management tool to help craft posts and generate content ideas.",
+    "link": "https://publer.io/ai-assistant",
+    "type": "Freemium"
+  },
+  {
+    "name": "Postwise AI",
+    "mainCategory": "AI",
+    "subCategory": "Social Media Tools",
+    "description": "An AI-powered tool specifically for Twitter (X) that helps write, schedule, and grow your audience with viral tweets.",
+    "link": "https://postwise.ai/",
+    "type": "Paid"
+  },
+  {
+    "name": "ViralKit AI",
+    "mainCategory": "AI",
+    "subCategory": "Social Media Tools",
+    "description": "A suite of AI tools for social media marketing, including content generation, scheduling, and analytics.",
+    "link": "https://viralkit.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Hootsuite OwlyWriter",
+    "mainCategory": "AI",
+    "subCategory": "Social Media Tools",
+    "description": "An AI content creation tool built into Hootsuite that helps generate captions, post ideas, and repurpose content.",
+    "link": "https://www.hootsuite.com/platform/owlywriter-ai",
+    "type": "Paid"
+  },
+  {
+    "name": "Buffer AI Assistant",
+    "mainCategory": "AI",
+    "subCategory": "Social Media Tools",
+    "description": "An AI tool within Buffer that helps brainstorm ideas, rephrase sentences, and expand on thoughts for social media posts.",
+    "link": "https://buffer.com/ai-assistant",
+    "type": "Paid"
+  },
+  {
+    "name": "TweetHunter AI",
+    "mainCategory": "AI",
+    "subCategory": "Social Media Tools",
+    "description": "An all-in-one tool to grow and monetize your Twitter (X) account, with AI-powered content creation and scheduling.",
+    "link": "https://tweethunter.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "CopyMonkey AI",
+    "mainCategory": "AI",
+    "subCategory": "Marketing & SEO",
+    "description": "An AI-powered tool that generates and optimizes Amazon product listings in seconds.",
+    "link": "https://copymonkey.ai/",
+    "type": "Paid"
+  },
+  {
+    "name": "Khanmigo (Khan Academy)",
+    "mainCategory": "AI",
+    "subCategory": "Education Tools",
+    "description": "An AI-powered tutor and teaching assistant from Khan Academy, designed to help learners and educators.",
+    "link": "https://www.khanacademy.org/khan-migo",
+    "type": "Paid"
+  },
+  {
+    "name": "Quizlet Q-Chat",
+    "mainCategory": "AI",
+    "subCategory": "Education Tools",
+    "description": "An AI tutor from Quizlet that creates personalized study paths, quizzes, and helps you understand your material.",
+    "link": "https://quizlet.com/q-chat",
+    "type": "Paid"
+  },
+  {
+    "name": "Socratic AI",
+    "mainCategory": "AI",
+    "subCategory": "Education Tools",
+    "description": "A learning app by Google that helps students get unstuck by providing explanations, videos, and step-by-step help for homework problems.",
+    "link": "https://socratic.org/",
+    "type": "Free"
+  },
+  {
+    "name": "Scribe AI",
+    "mainCategory": "AI",
+    "subCategory": "Education Tools",
+    "description": "An AI tool that automatically creates step-by-step guides and tutorials by capturing your workflow.",
+    "link": "https://scribehow.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Teachermatic AI",
+    "mainCategory": "AI",
+    "subCategory": "Education Tools",
+    "description": "An AI-powered platform that helps teachers generate lesson plans, learning activities, and other educational resources.",
+    "link": "https://www.teachermatic.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Edpuzzle AI",
+    "mainCategory": "AI",
+    "subCategory": "Education Tools",
+    "description": "An AI-powered feature within Edpuzzle that helps teachers generate questions and assessments for any video.",
+    "link": "https://edpuzzle.com/ai-for-teachers",
+    "type": "Freemium"
+  },
+  {
+    "name": "MagicSchool.ai",
+    "mainCategory": "AI",
+    "subCategory": "Education Tools",
+    "description": "An AI platform for teachers to help with lesson planning, assessments, writing IEPs, and communicating with families.",
+    "link": "https://www.magicschool.ai/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Brisk Teaching",
+    "mainCategory": "AI",
+    "subCategory": "Education Tools",
+    "description": "An AI-powered Chrome extension that helps teachers create materials, give feedback, and adapt content for all learners.",
+    "link": "https://www.briskteaching.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Gradescope AI",
+    "mainCategory": "AI",
+    "subCategory": "Education Tools",
+    "description": "A platform that helps instructors grade assignments and exams more efficiently using AI-assisted grading and answer grouping.",
+    "link": "https://www.gradescope.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Explain Everything AI",
+    "mainCategory": "AI",
+    "subCategory": "Education Tools",
+    "description": "An interactive whiteboard platform with AI features to help create engaging video lessons and presentations.",
+    "link": "https://explaineverything.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "BioGPT",
+    "mainCategory": "AI",
+    "subCategory": "Medical & Science",
+    "description": "A large language model from Microsoft pre-trained on biomedical research literature to answer questions and generate text for the biomedical domain.",
+    "link": "https://github.com/microsoft/BioGPT",
+    "type": "Free"
+  },
+  {
+    "name": "IBM Watson Health",
+    "mainCategory": "AI",
+    "subCategory": "Medical & Science",
+    "description": "Now part of Merative, it provides data, analytics, and AI-powered solutions for hospitals, health plans, and government agencies.",
+    "link": "https://www.merative.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "PathAI",
+    "mainCategory": "AI",
+    "subCategory": "Medical & Science",
+    "description": "An AI-powered pathology platform that assists pathologists in making more accurate diagnoses and supports biopharma research.",
+    "link": "https://www.pathai.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Enlitic",
+    "mainCategory": "AI",
+    "subCategory": "Medical & Science",
+    "description": "A company that develops deep learning medical tools to streamline radiology workflows and improve diagnostic accuracy.",
+    "link": "https://enlitic.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Paige AI",
+    "mainCategory": "AI",
+    "subCategory": "Medical & Science",
+    "description": "An AI-powered digital pathology platform that helps oncologists and pathologists improve cancer diagnosis and patient care.",
+    "link": "https://paige.ai/",
+    "type": "Paid"
+  },
+  {
+    "name": "Viz.ai",
+    "mainCategory": "AI",
+    "subCategory": "Medical & Science",
+    "description": "An AI-powered care coordination platform that helps hospital systems detect and treat diseases like stroke and aneurysm more quickly.",
+    "link": "https://www.viz.ai/",
+    "type": "Paid"
+  },
+  {
+    "name": "DeepMind AlphaFold",
+    "mainCategory": "AI",
+    "subCategory": "Medical & Science",
+    "description": "An AI system by DeepMind that predicts a protein's 3D structure from its amino acid sequence, a major breakthrough in biology.",
+    "link": "https://www.deepmind.com/research/highlighted-research/alphafold",
+    "type": "Free"
+  },
+  {
+    "name": "Butterfly Network AI",
+    "mainCategory": "AI",
+    "subCategory": "Medical & Science",
+    "description": "A company that provides a handheld, whole-body ultrasound device powered by AI to make medical imaging more accessible and affordable.",
+    "link": "https://www.butterflynetwork.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Tempus AI",
+    "mainCategory": "AI",
+    "subCategory": "Medical & Science",
+    "description": "A technology company advancing precision medicine through the practical application of artificial intelligence in healthcare.",
+    "link": "https://www.tempus.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Aidoc",
+    "mainCategory": "AI",
+    "subCategory": "Medical & Science",
+    "description": "An AI-powered solution for radiologists that helps prioritize life-threatening cases and expedite patient care by analyzing medical images.",
+    "link": "https://www.aidoc.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Harvey AI",
+    "mainCategory": "AI",
+    "subCategory": "Legal & Finance",
+    "description": "An AI platform for elite law firms that provides solutions for legal research, analysis, and drafting, built on top of OpenAI's models.",
+    "link": "https://www.harvey.ai/",
+    "type": "Paid"
+  },
+  {
+    "name": "Spellbook",
+    "mainCategory": "AI",
+    "subCategory": "Legal & Finance",
+    "description": "An AI copilot for lawyers, integrated into Microsoft Word, that helps draft and review contracts faster.",
+    "link": "https://spellbook.legal/",
+    "type": "Paid"
+  },
+  {
+    "name": "Luminance",
+    "mainCategory": "AI",
+    "subCategory": "Legal & Finance",
+    "description": "An AI platform for the legal profession that assists with contract review, due diligence, and e-discovery.",
+    "link": "https://www.luminance.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "DoNotPay",
+    "mainCategory": "AI",
+    "subCategory": "Legal & Finance",
+    "description": "Billed as 'The World's First Robot Lawyer,' this app helps users fight corporations, beat bureaucracy, and sue anyone at the press of a button.",
+    "link": "https://donotpay.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Lawgeex",
+    "mainCategory": "AI",
+    "subCategory": "Legal & Finance",
+    "description": "Now part of LegalSifter, this AI platform automates the review of everyday contracts for businesses.",
+    "link": "https://www.legalsifter.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Klarity",
+    "mainCategory": "AI",
+    "subCategory": "Legal & Finance",
+    "description": "An AI platform that automates contract review for accounting teams, helping to ensure compliance with revenue recognition standards.",
+    "link": "https://www.tryklarity.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Kira Systems",
+    "mainCategory": "AI",
+    "subCategory": "Legal & Finance",
+    "description": "Now part of Litera, this is a machine learning software that identifies, extracts, and analyzes text in contracts and other documents.",
+    "link": "https://www.litera.com/store/kira/",
+    "type": "Paid"
+  },
+  {
+    "name": "Xtract.ai",
+    "mainCategory": "AI",
+    "subCategory": "Legal & Finance",
+    "description": "A company providing AI and machine learning solutions for data extraction and analysis across various industries, including finance.",
+    "link": "https://www.xtract.ai/",
+    "type": "Paid"
+  },
+  {
+    "name": "Zest AI",
+    "mainCategory": "AI",
+    "subCategory": "Legal & Finance",
+    "description": "An AI-powered software for credit underwriting, helping lenders make more accurate and equitable loan decisions.",
+    "link": "https://www.zest.ai/",
+    "type": "Paid"
+  },
+  {
+    "name": "Cleo AI",
+    "mainCategory": "AI",
+    "subCategory": "Legal & Finance",
+    "description": "A personal finance assistant and money management app that uses AI to help you budget, save, and track your spending.",
+    "link": "https://web.meetcleo.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Character.ai",
+    "mainCategory": "AI",
+    "subCategory": "Creative & Fun",
+    "description": "A platform where you can create and talk to AI-powered characters, from historical figures to fictional personalities.",
+    "link": "https://character.ai/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Inworld AI",
+    "mainCategory": "AI",
+    "subCategory": "Creative & Fun",
+    "description": "A developer platform for creating AI-powered virtual characters and NPCs for games and immersive experiences.",
+    "link": "https://inworld.ai/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Replika AI",
+    "mainCategory": "AI",
+    "subCategory": "Creative & Fun",
+    "description": "An AI companion who is eager to learn and would love to see the world through your eyes. It's always ready to chat and listen.",
+    "link": "https://replika.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "AI Dungeon",
+    "mainCategory": "AI",
+    "subCategory": "Creative & Fun",
+    "description": "An AI-generated text-based adventure game with endless possibilities, where you can do or say anything to continue the story.",
+    "link": "https://aidungeon.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "NovelAI",
+    "mainCategory": "AI",
+    "subCategory": "Creative & Fun",
+    "description": "A monthly subscription service for AI-assisted authorship, storytelling, and virtual companionship. Also includes image generation.",
+    "link": "https://novelai.net/",
+    "type": "Paid"
+  },
+  {
+    "name": "Storybird AI",
+    "mainCategory": "AI",
+    "subCategory": "Creative & Fun",
+    "description": "A platform that uses AI to help users create unique visual stories, comics, and picture books in seconds.",
+    "link": "https://storybird.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "SongR",
+    "mainCategory": "AI",
+    "subCategory": "Creative & Fun",
+    "description": "An AI-powered song generator that creates a full song with lyrics and vocals from a simple text prompt.",
+    "link": "https://www.songr.ai/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Beatoven.ai",
+    "mainCategory": "AI",
+    "subCategory": "Creative & Fun",
+    "description": "An AI music generator that composes unique, royalty-free music tailored to the mood and theme of your video or podcast.",
+    "link": "https://www.beatoven.ai/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Boomy AI",
+    "mainCategory": "AI",
+    "subCategory": "Creative & Fun",
+    "description": "An AI-powered music generator that lets you create original songs in seconds, even if you've never made music before.",
+    "link": "https://boomy.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "LyricStudio",
+    "mainCategory": "AI",
+    "subCategory": "Creative & Fun",
+    "description": "An AI-powered lyric writing assistant that gives you suggestions and ideas to help you write original song lyrics.",
+    "link": "https://lyricstudio.net/",
+    "type": "Freemium"
+  },
+  {
+    "name": "FlowGPT",
+    "mainCategory": "AI",
+    "subCategory": "Miscellaneous",
+    "description": "A community-driven platform for sharing and discovering the best ChatGPT prompts for various tasks.",
+    "link": "https://flowgpt.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "PromptHero",
+    "mainCategory": "AI",
+    "subCategory": "Miscellaneous",
+    "description": "A search engine for AI art prompts, allowing you to find inspiration from millions of images generated by models like Stable Diffusion and Midjourney.",
+    "link": "https://prompthero.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "PromptBase",
+    "mainCategory": "AI",
+    "subCategory": "Miscellaneous",
+    "description": "A marketplace for buying and selling high-quality prompts for AI models like DALL-E, Midjourney, and GPT.",
+    "link": "https://promptbase.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "AIPRM for ChatGPT",
+    "mainCategory": "AI",
+    "subCategory": "Miscellaneous",
+    "description": "A Chrome extension that adds a curated list of prompt templates for SEO, marketing, and more directly into ChatGPT.",
+    "link": "https://www.aiprm.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "FutureTools.io",
+    "mainCategory": "AI",
+    "subCategory": "Miscellaneous",
+    "description": "A curated directory of a wide variety of AI tools, updated daily, helping you discover the latest and greatest AI applications.",
+    "link": "https://www.futuretools.io/",
+    "type": "Free"
+  },
+  {
+    "name": "Nmap",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Network Security & Scanning",
+    "description": "A free and open-source utility for network discovery and security auditing. Used for finding hosts, services, and vulnerabilities on a network.",
+    "link": "https://nmap.org/",
+    "type": "Free"
+  },
+  {
+    "name": "Zenmap",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Network Security & Scanning",
+    "description": "The official graphical user interface (GUI) for the Nmap Security Scanner, making it easier for beginners to use Nmap's features.",
+    "link": "https://nmap.org/zenmap/",
+    "type": "Free"
+  },
+  {
+    "name": "Angry IP Scanner",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Network Security & Scanning",
+    "description": "A fast and simple cross-platform IP address and port scanner. It can scan IP ranges and gather information on each host.",
+    "link": "https://angryip.org/",
+    "type": "Free"
+  },
+  {
+    "name": "Advanced IP Scanner",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Network Security & Scanning",
+    "description": "A reliable and free network scanner to analyze LAN. The program shows all network devices, gives you access to shared folders, and can even remotely switch computers off.",
+    "link": "https://www.advanced-ip-scanner.com/",
+    "type": "Free"
+  },
+  {
+    "name": "Netcat",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Network Security & Scanning",
+    "description": "A versatile networking utility which reads and writes data across network connections, using the TCP/IP protocol. It's a reliable back-end tool for network debugging and exploration.",
+    "link": "https://nmap.org/ncat/",
+    "type": "Free"
+  },
+  {
+    "name": "OpenVAS",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Vulnerability Assessment",
+    "description": "A full-featured, open-source vulnerability scanner that is part of the Greenbone Vulnerability Management (GVM) framework.",
+    "link": "https://www.greenbone.net/",
+    "type": "Free"
+  },
+  {
+    "name": "Masscan",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Network Security & Scanning",
+    "description": "An incredibly fast TCP port scanner that can scan the entire Internet in under 5 minutes, designed for large-scale network surveys.",
+    "link": "https://github.com/robertdavidgraham/masscan",
+    "type": "Free"
+  },
+  {
+    "name": "Unicornscan",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Network Security & Scanning",
+    "description": "An asynchronous TCP/UDP port scanner and network discovery tool designed for accuracy, flexibility, and efficiency.",
+    "link": "https://github.com/trustedsec/unicornscan",
+    "type": "Free"
+  },
+  {
+    "name": "Ettercap",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Wireless & Network Hacking",
+    "description": "A comprehensive suite for man-in-the-middle attacks on LAN, featuring sniffing, content filtering, and host analysis.",
+    "link": "https://www.ettercap-project.org/",
+    "type": "Free"
+  },
+  {
+    "name": "DNSdumpster",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Network Security & Scanning",
+    "description": "A free domain research tool that can discover hosts related to a domain, providing valuable information for security assessments.",
+    "link": "https://dnsdumpster.com/",
+    "type": "Free"
+  },
+  {
+    "name": "Metasploit Framework",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Penetration Testing Frameworks",
+    "description": "The world's most used penetration testing framework for developing, testing, and executing exploit code against a remote target machine.",
+    "link": "https://www.metasploit.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Cobalt Strike",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Penetration Testing Frameworks",
+    "description": "A commercial threat emulation software for red teams, providing post-exploitation agents and covert channels to simulate advanced adversaries.",
+    "link": "https://www.cobaltstrike.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Empire",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Penetration Testing Frameworks",
+    "description": "A post-exploitation framework that includes PowerShell and Python agents, used for command and control and lateral movement.",
+    "link": "https://github.com/BC-SECURITY/Empire",
+    "type": "Free"
+  },
+  {
+    "name": "BeEF (Browser Exploitation Framework)",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Penetration Testing Frameworks",
+    "description": "A penetration testing tool that focuses on the web browser, using client-side attack vectors to assess security posture.",
+    "link": "https://beefproject.com/",
+    "type": "Free"
+  },
+  {
+    "name": "Core Impact",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Penetration Testing Frameworks",
+    "description": "A commercial penetration testing tool that allows security teams to safely exploit vulnerabilities and assess security controls.",
+    "link": "https://www.coresecurity.com/products/core-impact",
+    "type": "Paid"
+  },
+  {
+    "name": "Nessus",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Vulnerability Assessment",
+    "description": "A widely-used vulnerability scanner from Tenable that helps identify vulnerabilities, misconfigurations, and malware.",
+    "link": "https://www.tenable.com/products/nessus",
+    "type": "Freemium"
+  },
+  {
+    "name": "QualysGuard",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Vulnerability Assessment",
+    "description": "A cloud-based platform that provides vulnerability management, detection, and response (VMDR) to help organizations protect their IT assets.",
+    "link": "https://www.qualys.com/apps/vulnerability-management-detection-response/",
+    "type": "Paid"
+  },
+  {
+    "name": "Nexpose",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Vulnerability Assessment",
+    "description": "A vulnerability scanner from Rapid7 that provides a comprehensive view of risk, helping to prioritize vulnerabilities.",
+    "link": "https://www.rapid7.com/products/nexpose/",
+    "type": "Paid"
+  },
+  {
+    "name": "Acunetix",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Vulnerability Assessment",
+    "description": "An automated web application security scanner that helps find and fix vulnerabilities like SQL Injection and Cross-Site Scripting (XSS).",
+    "link": "https://www.acunetix.com/",
+    "type": "Paid"
+  },
+  {
+    "name": "Burp Suite",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Vulnerability Assessment",
+    "description": "An integrated platform for performing security testing of web applications, from initial mapping to finding and exploiting vulnerabilities.",
+    "link": "https://portswigger.net/burp",
+    "type": "Freemium"
+  },
+  {
+    "name": "OWASP ZAP",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Web Application Security",
+    "description": "An open-source web application security scanner designed for a wide range of security experience, from developers to security professionals.",
+    "link": "https://www.zaproxy.org/",
+    "type": "Free"
+  },
+  {
+    "name": "Wapiti",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Web Application Security",
+    "description": "An open-source web application vulnerability scanner that performs 'black-box' scans without studying the source code.",
+    "link": "http://wapiti.sourceforge.net/",
+    "type": "Free"
+  },
+  {
+    "name": "Nikto",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Web Application Security",
+    "description": "An open-source web server scanner which performs comprehensive tests for over 6700 potentially dangerous files/programs.",
+    "link": "https://cirt.net/Nikto2",
+    "type": "Free"
+  },
+  {
+    "name": "Arachni",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Web Application Security",
+    "description": "A feature-rich, modular, high-performance Ruby framework aimed towards helping penetration testers and administrators evaluate the security of web applications.",
+    "link": "https://www.arachni-scanner.com/",
+    "type": "Free"
+  },
+  {
+    "name": "Vega Scanner",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Web Application Security",
+    "description": "An open-source web security scanner and testing platform to help you find and validate SQL Injection, Cross-Site Scripting (XSS), and other vulnerabilities.",
+    "link": "https://subgraph.com/vega/",
+    "type": "Free"
+  },
+  {
+    "name": "Aircrack-ng",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Wireless & Network Hacking",
+    "description": "A complete suite of tools to assess Wi-Fi network security. It focuses on monitoring, attacking, testing, and cracking.",
+    "link": "https://www.aircrack-ng.org/",
+    "type": "Free"
+  },
+  {
+    "name": "Kismet",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Wireless & Network Hacking",
+    "description": "A wireless network detector, sniffer, and intrusion detection system. It works with Wi-Fi, Bluetooth, and other wireless protocols.",
+    "link": "https://www.kismetwireless.net/",
+    "type": "Free"
+  },
+  {
+    "name": "Wireshark",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Wireless & Network Hacking",
+    "description": "The world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level.",
+    "link": "https://www.wireshark.org/",
+    "type": "Free"
+  },
+  {
+    "name": "CommView for WiFi",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Wireless & Network Hacking",
+    "description": "A powerful wireless network monitor and analyzer for 802.11 a/b/g/n/ac/ax networks. It captures every packet on the air to display important information.",
+    "link": "https://www.tamos.com/products/commview/",
+    "type": "Paid"
+  },
+  {
+    "name": "Reaver",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Wireless & Network Hacking",
+    "description": "A tool that implements a brute force attack against Wi-Fi Protected Setup (WPS) registrar PINs to recover WPA/WPA2 passphrases.",
+    "link": "https://github.com/t6x/reaver-wps-fork-t6x",
+    "type": "Free"
+  },
+  {
+    "name": "John the Ripper",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Password Cracking & Recovery",
+    "description": "A fast password cracker, available for many operating systems. It supports hundreds of hash and cipher types.",
+    "link": "https://www.openwall.com/john/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Hashcat",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Password Cracking & Recovery",
+    "description": "The world's fastest and most advanced password recovery utility, supporting five unique modes of attack for over 300 highly-optimized hashing algorithms.",
+    "link": "https://hashcat.net/hashcat/",
+    "type": "Free"
+  },
+  {
+    "name": "Hydra",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Password Cracking & Recovery",
+    "description": "A parallelized login cracker which supports numerous protocols to attack. It is very fast and flexible.",
+    "link": "https://github.com/vanhauser-thc/thc-hydra",
+    "type": "Free"
+  },
+  {
+    "name": "Cain & Abel",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Password Cracking & Recovery",
+    "description": "A password recovery tool for Microsoft OS. It recovers passwords by sniffing the network, cracking hashes using dictionary, brute-force, and cryptanalysis attacks.",
+    "link": "http://www.oxid.it/cain.html",
+    "type": "Free"
+  },
+  {
+    "name": "Ophcrack",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Password Cracking & Recovery",
+    "description": "A free Windows password cracker based on rainbow tables. It is a very efficient implementation of rainbow tables.",
+    "link": "http://ophcrack.sourceforge.net/",
+    "type": "Free"
+  },
+  {
+    "name": "Autopsy",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Digital Forensics & Incident Response",
+    "description": "A digital forensics platform and graphical interface to The Sleuth Kit® and other digital forensics tools to investigate what happened on a computer.",
+    "link": "https://www.autopsy.com/",
+    "type": "Free"
+  },
+  {
+    "name": "FTK Imager",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Digital Forensics & Incident Response",
+    "description": "A data preview and imaging tool that lets you quickly assess electronic evidence and create perfect copies (forensic images) of computer data.",
+    "link": "https://www.exterro.com/digital-forensics-software/ftk-imager",
+    "type": "Free"
+  },
+  {
+    "name": "Volatility",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Digital Forensics & Incident Response",
+    "description": "An open-source memory forensics framework for incident response and malware analysis, used to extract artifacts from volatile memory (RAM) samples.",
+    "link": "https://www.volatilityfoundation.org/",
+    "type": "Free"
+  },
+  {
+    "name": "Cuckoo Sandbox",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Malware Analysis",
+    "description": "An open source automated malware analysis system that runs files in an isolated environment to see what the malware does.",
+    "link": "https://cuckoosandbox.org/",
+    "type": "Free"
+  },
+  {
+    "name": "REMnux",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Malware Analysis",
+    "description": "A Linux toolkit for reverse-engineering and analyzing malicious software, containing a wide range of tools for examining malware.",
+    "link": "https://remnux.org/",
+    "type": "Free"
+  },
+  {
+    "name": "PEiD",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Malware Analysis",
+    "description": "A tool that detects most common packers, cryptors, and compilers for PE files, useful for identifying binary obfuscation.",
+    "link": "https://www.aldeid.com/wiki/PEiD",
+    "type": "Free"
+  },
+  {
+    "name": "Maltego",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Malware Analysis",
+    "description": "An open-source intelligence (OSINT) and graphical link analysis tool for gathering and connecting information for investigative tasks.",
+    "link": "https://www.maltego.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Ghidra",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Malware Analysis",
+    "description": "A software reverse engineering (SRE) framework developed by the NSA, including a suite of full-featured, high-end software analysis tools.",
+    "link": "https://ghidra-sre.org/",
+    "type": "Free"
+  },
+  {
+    "name": "ScoutSuite",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Cloud & Container Security",
+    "description": "An open-source multi-cloud security-auditing tool, which enables security posture assessment of cloud environments.",
+    "link": "https://github.com/nccgroup/ScoutSuite",
+    "type": "Free"
+  },
+  {
+    "name": "Trivy",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Cloud & Container Security",
+    "description": "A simple and comprehensive vulnerability scanner for containers and other artifacts. It detects vulnerabilities in OS packages and application dependencies.",
+    "link": "https://github.com/aquasecurity/trivy",
+    "type": "Free"
+  },
+  {
+    "name": "Anchore",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Cloud & Container Security",
+    "description": "A container security platform that provides deep image inspection and analysis to generate a detailed bill of materials and enforce security policies.",
+    "link": "https://anchore.com/",
+    "type": "Freemium"
+  },
+  {
+    "name": "CloudSploit",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Cloud & Container Security",
+    "description": "Now part of Aqua Security, it's an open-source tool for detecting security risks in cloud infrastructure accounts from AWS, Azure, and Google Cloud.",
+    "link": "https://www.aquasec.com/products/cloudsploit/",
+    "type": "Freemium"
+  },
+  {
+    "name": "Falco",
+    "mainCategory": "Cybersecurity",
+    "subCategory": "Cloud & Container Security",
+    "description": "A cloud-native runtime security project, the de facto Kubernetes threat detection engine. It detects unexpected application behavior and alerts on threats at runtime.",
+    "link": "https://falco.org/",
+    "type": "Free"
+  }
 ]

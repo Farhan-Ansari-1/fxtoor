@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import BrandName from '../components/BrandName.jsx';
+import BrandName from '../Components/BrandName';
 import emailjs from '@emailjs/browser';
 
 const ContactUs = () => {
@@ -42,27 +42,24 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="p-8 max-w-2xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4 text-center">Contact <BrandName /></h1>
-      <p className="text-lg mb-6 text-center">
+    <div className="p-8 max-w-2xl mx-auto text-gray-800 dark:text-gray-200">
+      <h1 className="text-3xl font-bold mb-4 text-center">Contact <BrandName className="text-blue-600 dark:text-blue-400" /></h1>
+      <p className="text-lg mb-6 text-center text-gray-600 dark:text-gray-400">
         If you have questions, feedback, or want to suggest a new tool, reach out to us.
       </p>
 
-      <div className="mb-8 p-4 border rounded-lg bg-gray-50 text-center">
+      <div className="mb-8 p-4 border dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 text-center">
         <p className="mb-2">
-          <strong>📧 Email:</strong> <a href="mailto:farx.root.01@gmail.com" className="text-blue-500 hover:underline">farx.root.01@gmail.com</a>
+          <strong>📧 Email:</strong> <a href="mailto:farx.root.01@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">farx.root.01@gmail.com</a>
         </p>
-        <p className="mb-4">
-          <strong>🌐 Website:</strong> <a href="https://fxtoor.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">https://fxtoor.com</a>
-        </p>
-        <p className="text-sm text-gray-600">We usually respond within 48 hours.</p>
+        <p className="text-sm text-gray-500 dark:text-gray-400">We usually respond within 48 hours.</p>
       </div>
 
-      <p className="text-lg mb-6 text-center">Or, fill out the form below:</p>
+      <p className="text-lg mb-6 text-center text-gray-600 dark:text-gray-400">Or, fill out the form below:</p>
 
       <form ref={form} onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label htmlFor="name" className="block text-gray-700 font-bold mb-2">Name</label>
+          <label htmlFor="name" className="block font-bold mb-2">Name</label>
           <input
             type="text"
             id="name"
@@ -70,11 +67,11 @@ const ContactUs = () => {
             value={formData.from_name}
             onChange={handleChange}
             required
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 dark:border-gray-600"
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="email" className="block text-gray-700 font-bold mb-2">Email</label>
+          <label htmlFor="email" className="block font-bold mb-2">Email</label>
           <input
             type="email"
             id="email"
@@ -82,11 +79,11 @@ const ContactUs = () => {
             value={formData.from_email}
             onChange={handleChange}
             required
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 dark:border-gray-600"
           />
         </div>
         <div className="mb-6">
-          <label htmlFor="message" className="block text-gray-700 font-bold mb-2">Message</label>
+          <label htmlFor="message" className="block font-bold mb-2">Message</label>
           <textarea
             id="message"
             name="message"
@@ -94,20 +91,20 @@ const ContactUs = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-700 dark:border-gray-600"
           ></textarea>
         </div>
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300 disabled:bg-blue-300 disabled:cursor-not-allowed"
+          className="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300 disabled:bg-blue-400 disabled:cursor-not-allowed"
         >
           {isSubmitting ? 'Sending...' : 'Send Message'}
         </button>
       </form>
 
       {status && (
-        <p className="mt-4 text-center text-green-600">{status}</p>
+        <p className={`mt-4 text-center font-semibold ${status.includes('Oops') ? 'text-red-500' : 'text-green-500'}`}>{status}</p>
       )}
     </div>
   );

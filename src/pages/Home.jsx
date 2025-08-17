@@ -1,19 +1,29 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import SearchBar from '../components/searchBar.jsx';
-import FilterBar from '../components/FilterBar.jsx';
-import ToolList from '../components/ToolList.jsx';
+import React, { useState, useMemo, useEffect } from 'react';
+import SearchBar from '../Components/SearchBar';
+import FilterBar from '../Components/FilterBar';
+import ToolList from '../Components/ToolList';
 
-function Home() {
+export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
+  // Loading, error, aur data states
   const [allTools, setAllTools] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
   const [categoryFilter, setCategoryFilter] = useState('All');
   const [typeFilter, setTypeFilter] = useState('All');
+  const [subCategoryFilter, setSubCategoryFilter] = useState('All');
 
+  // Reset sub-category filter when main category changes
+  useEffect(() => {
+    setSubCategoryFilter('All');
+  }, [categoryFilter]);
+
+  // Data fetch karne ke liye useEffect
   useEffect(() => {
     const fetchTools = async () => {
       try {
+        // tools.json ko public folder se fetch karein
         const response = await fetch('/tools.json');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
@@ -22,54 +32,90 @@ function Home() {
         setAllTools(data);
       } catch (e) {
         setError(e.message);
+        console.error("Error fetching tools.json:", e);
       } finally {
         setLoading(false);
       }
     };
-    fetchTools();
-  }, []);
 
-  const { filteredTools, allCategories } = useMemo(() => {
-    if (!allTools.length) {
-      return { filteredTools: [], allCategories: ['All'] };
+    fetchTools();
+  }, []); // Empty dependency array ensures this runs only once on mount
+
+  const { filteredTools, allCategories, allSubCategories } = useMemo(() => {
+    if (!Array.isArray(allTools)) return { filteredTools: [], allCategories: ['All'], allSubCategories: [] };
+
+    // Sabse important step: Data ko saaf karna (Data Sanitization).
+    // Hum sirf unhi tools ko aage bhejenge jo ek object hain aur jinka 'name' hai.
+    // Isse crash hone ka chance bilkul khatam ho jaayega.
+    // Hum 'id' aur 'name' dono check karenge taaki app crash na ho.
+    const validTools = allTools.filter(tool => tool && typeof tool === 'object' && tool.name);
+
+    // 1. Get all main categories from the full, valid list
+    const categories = ['All', ...new Set(validTools.map(t => t.mainCategory).filter(Boolean))];
+
+    // 2. Start filtering by main category
+    let partiallyFilteredTools = validTools;
+    if (categoryFilter !== 'All') {
+      partiallyFilteredTools = partiallyFilteredTools.filter(t => t.mainCategory === categoryFilter);
     }
 
-    const categories = ['All', ...new Set(allTools.map(t => t.category.split(' - ')[0]))];
+    // 3. Get available sub-categories from the already-filtered list
+    const subCategories = ['All', ...new Set(partiallyFilteredTools.map(t => t.subCategory).filter(Boolean))];
 
-    let tools = allTools;
-
-    if (categoryFilter !== 'All') {
-      tools = tools.filter(t => t.category.startsWith(categoryFilter));
+    // 4. Continue filtering by sub-category and type
+    let finalFilteredTools = partiallyFilteredTools;
+    if (subCategoryFilter !== 'All') {
+      finalFilteredTools = finalFilteredTools.filter(t => t.subCategory === subCategoryFilter);
     }
 
     if (typeFilter !== 'All') {
-      tools = tools.filter(t => t.type === typeFilter);
+      finalFilteredTools = finalFilteredTools.filter(t => t.type === typeFilter);
     }
 
-    return { filteredTools: tools, allCategories: categories };
-  }, [allTools, categoryFilter, typeFilter]);
+    // 5. Aakhir mein, search query se filter karein
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase();
+      finalFilteredTools = finalFilteredTools.filter(tool =>
+        tool.name.toLowerCase().includes(query) ||
+        (tool.description && tool.description.toLowerCase().includes(query))
+      );
+    }
 
-  const renderContent = () => {
-    if (loading) {
-      return <div className="text-center text-xl text-gray-500">Loading tools...</div>;
-    }
-    if (error) {
-      return <div className="text-center text-xl text-red-500">Error fetching tools: {error}</div>;
-    }
-    return <ToolList tools={filteredTools} searchQuery={searchQuery} />;
-  };
+    return { filteredTools: finalFilteredTools, allCategories: categories, allSubCategories: subCategories };
+  }, [allTools, categoryFilter, typeFilter, subCategoryFilter, searchQuery]);
+
+  if (loading) {
+    return <div className="text-center text-xl text-gray-500 py-10">Loading tools...</div>;
+  }
+
+  if (error) {
+    return <div className="text-center text-xl text-red-500 py-10">Error fetching tools: {error}</div>;
+  }
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="mb-8 p-4 bg-white rounded-lg shadow-sm border">
+      {/* Control Bar ko thoda saaf-suthra banayein */}
+      <div className="mb-8 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
         <div className="flex flex-col md:flex-row gap-4 items-center">
-          <SearchBar query={searchQuery} setQuery={setSearchQuery} />
-          <FilterBar category={categoryFilter} setCategory={setCategoryFilter} typeFilter={typeFilter} setTypeFilter={setTypeFilter} allCategories={allCategories} />
+          <div className="w-full md:w-1/3">
+            <SearchBar query={searchQuery} setQuery={setSearchQuery} />
+          </div>
+          <div className="w-full md:w-2/3">
+            <FilterBar
+            category={categoryFilter}
+            setCategory={setCategoryFilter}
+            typeFilter={typeFilter}
+            setTypeFilter={setTypeFilter}
+            subCategory={subCategoryFilter}
+            setSubCategory={setSubCategoryFilter}
+            allSubCategories={allSubCategories}
+            allCategories={allCategories}
+          />
+          </div>
         </div>
       </div>
-      {renderContent()}
+      {/* Ab ToolList ko sirf filtered tools pass karein */}
+      <ToolList tools={filteredTools} />
     </div>
   );
 }
-
-export default Home;

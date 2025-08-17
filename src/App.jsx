@@ -1,32 +1,31 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Header from './components/header.jsx';
-import Footer from './components/Footer.jsx';
-import Home from './pages/Home.jsx'; // Correct path
-import AboutUs from './pages/AboutUs.jsx'; // Correct path
-import ContactUs from './pages/ContactUs.jsx'; // Correct path
-import PrivacyPolicy from './pages/PrivacyPolicy.jsx'; // Correct path
-import TermsAndConditions from './pages/TermsAndConditions.jsx'; // Correct path
+// Components aur Pages ko import karein (sahi path ke saath)
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import ContactUs from './pages/ContactUs';
 
-function App() {
+export default function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-gray-50">
-        <Header />
-        <main className="flex-grow">
+      <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+        <Navbar />
+
+        <main className="flex-grow container mx-auto px-4">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<AboutUs />} />
+            <Route path="/about" element={<About />} />
             <Route path="/contact" element={<ContactUs />} />
-            <Route path="/privacy" element={<PrivacyPolicy />} />
-            <Route path="/terms" element={<TermsAndConditions />} />
+            {/* Agar koi page na mile to Home par bhej dein */}
+            <Route path="*" element={<Home />} />
           </Routes>
         </main>
+
         <Footer />
       </div>
     </Router>
   );
 }
-
-export default App;

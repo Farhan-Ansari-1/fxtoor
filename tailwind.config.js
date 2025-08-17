@@ -6,5 +6,8 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    // The @tailwindcss/line-clamp plugin is now included by default in Tailwind CSS v3.3+
+    // You can remove it from your dependencies.
+  ],
 };

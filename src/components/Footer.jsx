@@ -1,25 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BrandName from './BrandName.jsx';
+import BrandName from './BrandName';
 
-export default function Footer() {
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="bg-gray-100 text-gray-600 mt-12 border-t">
-      <div className="container mx-auto px-4 py-6 text-center">
-        
-        {/* Navigation Links */}
-        <div className="flex justify-center flex-wrap gap-x-4 gap-y-2 md:gap-x-6 mb-4 text-sm">
-          <Link to="/about" className="hover:text-blue-500 hover:underline">About Us</Link>
-          <Link to="/contact" className="hover:text-blue-500 hover:underline">Contact Us</Link>
-          <Link to="/privacy" className="hover:text-blue-500 hover:underline">Privacy Policy</Link>
-          <Link to="/terms" className="hover:text-blue-500 hover:underline">Terms & Conditions</Link>
+    <footer className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 mt-auto">
+      <div className="container mx-auto py-6 px-4">
+        <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+          <div className="mb-4 md:mb-0">
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              © {currentYear} <BrandName />. All Rights Reserved.
+            </p>
+          </div>
+          <div className="flex gap-x-6">
+            <Link to="/about" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">About</Link>
+            <Link to="/contact" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">Contact</Link>
+          </div>
         </div>
-
-        {/* Footer Text */}
-        <p className="text-sm">
-          &copy; {new Date().getFullYear()} <BrandName />. All rights reserved. Made by <strong>farX</strong>.
-        </p>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;
