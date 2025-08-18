@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BrandName from '../components/BrandName.jsx';
 
 const TermsAndConditions = () => {
@@ -48,7 +49,8 @@ const TermsAndConditions = () => {
       </p>
 
       <p className="mt-8 text-center">
-        For questions, contact us at <a href="mailto:farx.root.01@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">farx.root.01@gmail.com</a>.
+        For questions, contact us at:
+        <Link to="/contact" className="text-blue-600 dark:text-blue-400 hover:underline"> Contact Us</Link>.
       </p>
     </div>
   );
