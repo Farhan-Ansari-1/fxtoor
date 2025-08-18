@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import SearchBar from './../components/SearchBar';
 import FilterBar from './../components/FilterBar';
 import ToolList from './../components/ToolList';
+import SkeletonCard from './../components/SkeletonCard';
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -98,7 +99,18 @@ export default function Home() {
   }, [allTools, categoryFilter, typeFilter, subCategoryFilter, searchQuery]);
 
   if (loading) {
-    return <div className="text-center text-xl text-gray-500 py-10">Loading tools...</div>;
+    // Jab tak data load ho raha hai, skeleton cards ka grid dikhayein.
+    // Isse user ko lagega ki content aane wala hai.
+    return (
+      <div className="container mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {/* Ek array banakar 8 skeleton cards render kar rahe hain */}
+          {Array.from({ length: 8 }).map((_, index) => (
+            <SkeletonCard key={index} />
+          ))}
+        </div>
+      </div>
+    );
   }
 
   if (error) {
