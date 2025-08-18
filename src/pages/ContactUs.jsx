@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import BrandName from '../Components/BrandName';
+import BrandName from '../components/BrandName';
 import emailjs from '@emailjs/browser';
 
 const ContactUs = () => {

@@ -2,11 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Components aur Pages ko import karein (sahi path ke saath)
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import ContactUs from './pages/ContactUs';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import NotFound from './pages/NotFound';
+import TermsAndConditions from './pages/TermsAndConditions';
 
 export default function App() {
   return (
@@ -19,8 +22,10 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<ContactUs />} />
-            {/* Agar koi page na mile to Home par bhej dein */}
-            <Route path="*" element={<Home />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsAndConditions />} />
+            {/* Agar koi page na mile to NotFound page dikhayein */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
 

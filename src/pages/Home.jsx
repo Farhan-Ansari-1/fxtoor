@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import SearchBar from '../Components/SearchBar';
-import FilterBar from '../Components/FilterBar';
-import ToolList from '../Components/ToolList';
+import SearchBar from './../components/SearchBar';
+import FilterBar from './../components/FilterBar';
+import ToolList from './../components/ToolList';
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -14,10 +14,12 @@ export default function Home() {
   const [typeFilter, setTypeFilter] = useState('All');
   const [subCategoryFilter, setSubCategoryFilter] = useState('All');
 
-  // Reset sub-category filter when main category changes
-  useEffect(() => {
+  // Jab bhi main category badle, sub-category ko reset kar dein.
+  // Isse UI mein ek saath update hoga aur extra re-render bachega.
+  const handleCategoryChange = (newCategory) => {
+    setCategoryFilter(newCategory);
     setSubCategoryFilter('All');
-  }, [categoryFilter]);
+  };
 
   // Data fetch karne ke liye useEffect
   useEffect(() => {
@@ -41,8 +43,8 @@ export default function Home() {
     fetchTools();
   }, []); // Empty dependency array ensures this runs only once on mount
 
-  const { filteredTools, allCategories, allSubCategories } = useMemo(() => {
-    if (!Array.isArray(allTools)) return { filteredTools: [], allCategories: ['All'], allSubCategories: [] };
+  const { filteredTools, allCategories, allSubCategories, allTypes } = useMemo(() => {
+    if (!Array.isArray(allTools) || allTools.length === 0) return { filteredTools: [], allCategories: ['All'], allSubCategories: ['All'], allTypes: ['All'] };
 
     // Sabse important step: Data ko saaf karna (Data Sanitization).
     // Hum sirf unhi tools ko aage bhejenge jo ek object hain aur jinka 'name' hai.
@@ -52,6 +54,9 @@ export default function Home() {
 
     // 1. Get all main categories from the full, valid list
     const categories = ['All', ...new Set(validTools.map(t => t.mainCategory).filter(Boolean))];
+
+    // Get all unique types from the full, valid list
+    const allTypes = ['All', ...new Set(validTools.map(t => t.type).filter(Boolean))];
 
     // 2. Start filtering by main category
     let partiallyFilteredTools = validTools;
@@ -81,7 +86,7 @@ export default function Home() {
       );
     }
 
-    return { filteredTools: finalFilteredTools, allCategories: categories, allSubCategories: subCategories };
+    return { filteredTools: finalFilteredTools, allCategories: categories, allSubCategories: subCategories, allTypes: allTypes };
   }, [allTools, categoryFilter, typeFilter, subCategoryFilter, searchQuery]);
 
   if (loading) {
@@ -92,24 +97,31 @@ export default function Home() {
     return <div className="text-center text-xl text-red-500 py-10">Error fetching tools: {error}</div>;
   }
 
+  // Ek aur suraksha check: Jab tak data load na ho, kuch render na karein.
+  // Yeh "uncaught runtime error" se bachne ka sabse accha tarika hai.
+  if (!filteredTools) {
+    return null; // Ya ek loading indicator dikha sakte hain
+  }
+
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Control Bar ko thoda saaf-suthra banayein */}
       <div className="mb-8 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
-        <div className="flex flex-col md:flex-row gap-4 items-center">
-          <div className="w-full md:w-1/3">
+        <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
+          <div className="w-full md:w-auto md:flex-grow lg:flex-grow-0 lg:w-1/3">
             <SearchBar query={searchQuery} setQuery={setSearchQuery} />
           </div>
-          <div className="w-full md:w-2/3">
+          <div className="w-full md:w-auto">
             <FilterBar
             category={categoryFilter}
-            setCategory={setCategoryFilter}
+            setCategory={handleCategoryChange} // Naya handler pass karein
             typeFilter={typeFilter}
             setTypeFilter={setTypeFilter}
             subCategory={subCategoryFilter}
             setSubCategory={setSubCategoryFilter}
             allSubCategories={allSubCategories}
             allCategories={allCategories}
+            allTypeFilters={allTypes}
           />
           </div>
         </div>
