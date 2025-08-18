@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import BrandName from './BrandName';
+import ThemeToggle from './ThemeToggle';
 
 const navLinks = [
   { name: 'Home', to: '/' },
@@ -30,10 +31,12 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
+            <ThemeToggle />
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Controls */}
           <div className="md:hidden flex items-center">
+            <ThemeToggle />
             <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
               {isOpen ? (
                 <XMarkIcon className="h-6 w-6 text-gray-700 dark:text-gray-300" />

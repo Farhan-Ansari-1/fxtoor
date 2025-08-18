@@ -21,6 +21,14 @@ export default function Home() {
     setSubCategoryFilter('All');
   };
 
+  // Sabhi filters ko reset karne ke liye handler
+  const handleClearFilters = () => {
+    setSearchQuery('');
+    setCategoryFilter('All');
+    setTypeFilter('All');
+    setSubCategoryFilter('All');
+  };
+
   // Data fetch karne ke liye useEffect
   useEffect(() => {
     const fetchTools = async () => {
@@ -103,6 +111,13 @@ export default function Home() {
     return null; // Ya ek loading indicator dikha sakte hain
   }
 
+  // Yeh check karega ki koi filter active hai ya nahi.
+  const isAnyFilterActive =
+    searchQuery !== '' ||
+    categoryFilter !== 'All' ||
+    typeFilter !== 'All' ||
+    subCategoryFilter !== 'All';
+
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Control Bar ko thoda saaf-suthra banayein */}
@@ -121,7 +136,8 @@ export default function Home() {
             setSubCategory={setSubCategoryFilter}
             allSubCategories={allSubCategories}
             allCategories={allCategories}
-            allTypeFilters={allTypes}
+            allTypeFilters={allTypes}            onClearFilters={handleClearFilters} // Clear filters handler pass karein
+            showClearButton={isAnyFilterActive} // Button dikhane ki condition pass karein
           />
           </div>
         </div>

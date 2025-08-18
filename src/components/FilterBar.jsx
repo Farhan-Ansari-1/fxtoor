@@ -3,7 +3,7 @@ import React from 'react';
 export default function FilterBar({
   category, setCategory, allCategories,
   subCategory, setSubCategory, allSubCategories,
-  typeFilter, setTypeFilter, allTypeFilters,
+  typeFilter, setTypeFilter, allTypeFilters, onClearFilters, showClearButton,
 }) {
   return (
     <div className="flex flex-wrap gap-4 items-center justify-start md:justify-end">
@@ -38,6 +38,16 @@ export default function FilterBar({
           {Array.isArray(allTypeFilters) && allTypeFilters.map((type) => <option key={type} value={type}>{type}</option>)}
         </select>
       </div>
+
+      {/* Clear Filters Button */}
+      {showClearButton && (
+        <button
+          onClick={onClearFilters}
+          className="border rounded-lg p-2 bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-500 transition-colors focus:ring-2 focus:ring-red-500 focus:outline-none"
+        >
+          Clear
+        </button>
+      )}
     </div>
   );
 }

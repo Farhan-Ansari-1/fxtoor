@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  // Sabse zaroori: Tailwind ko batayein ki dark mode 'class' strategy par chalega
+  darkMode: 'class',
+  // Un sabhi files ka path dein jahan aap Tailwind classes use kar rahe hain
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {},
   },
-  plugins: [
-    // The @tailwindcss/line-clamp plugin is now included by default in Tailwind CSS v3.3+
-    // You can remove it from your dependencies.
-  ],
-};
+  plugins: [],
+}
