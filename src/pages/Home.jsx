@@ -52,41 +52,33 @@ export default function Home() {
     fetchTools();
   }, []); // Empty dependency array ensures this runs only once on mount
 
+  // Filtering logic ko wapas `useMemo` mein daal rahe hain taaki component theek se chale.
+  // Custom hook mein shayad koi choti si galti ho gayi thi.
   const { filteredTools, allCategories, allSubCategories, allTypes } = useMemo(() => {
-    if (!Array.isArray(allTools) || allTools.length === 0) return { filteredTools: [], allCategories: ['All'], allSubCategories: ['All'], allTypes: ['All'] };
+    if (!Array.isArray(allTools) || allTools.length === 0) {
+      return { filteredTools: [], allCategories: ['All'], allSubCategories: ['All'], allTypes: ['All'] };
+    }
 
-    // Sabse important step: Data ko saaf karna (Data Sanitization).
-    // Hum sirf unhi tools ko aage bhejenge jo ek object hain aur jinka 'name' hai.
-    // Isse crash hone ka chance bilkul khatam ho jaayega.
-    // Hum 'id' aur 'name' dono check karenge taaki app crash na ho.
     const validTools = allTools.filter(tool => tool && typeof tool === 'object' && tool.name);
 
-    // 1. Get all main categories from the full, valid list
     const categories = ['All', ...new Set(validTools.map(t => t.mainCategory).filter(Boolean))];
-
-    // Get all unique types from the full, valid list
     const allTypes = ['All', ...new Set(validTools.map(t => t.type).filter(Boolean))];
 
-    // 2. Start filtering by main category
     let partiallyFilteredTools = validTools;
     if (categoryFilter !== 'All') {
       partiallyFilteredTools = partiallyFilteredTools.filter(t => t.mainCategory === categoryFilter);
     }
 
-    // 3. Get available sub-categories from the already-filtered list
     const subCategories = ['All', ...new Set(partiallyFilteredTools.map(t => t.subCategory).filter(Boolean))];
 
-    // 4. Continue filtering by sub-category and type
     let finalFilteredTools = partiallyFilteredTools;
     if (subCategoryFilter !== 'All') {
       finalFilteredTools = finalFilteredTools.filter(t => t.subCategory === subCategoryFilter);
     }
-
     if (typeFilter !== 'All') {
       finalFilteredTools = finalFilteredTools.filter(t => t.type === typeFilter);
     }
 
-    // 5. Aakhir mein, search query se filter karein
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
       finalFilteredTools = finalFilteredTools.filter(tool =>
@@ -117,12 +109,6 @@ export default function Home() {
     return <div className="text-center text-xl text-red-500 py-10">Error fetching tools: {error}</div>;
   }
 
-  // Ek aur suraksha check: Jab tak data load na ho, kuch render na karein.
-  // Yeh "uncaught runtime error" se bachne ka sabse accha tarika hai.
-  if (!filteredTools) {
-    return null; // Ya ek loading indicator dikha sakte hain
-  }
-
   // Yeh check karega ki koi filter active hai ya nahi.
   const isAnyFilterActive =
     searchQuery !== '' ||
@@ -140,17 +126,18 @@ export default function Home() {
           </div>
           <div className="w-full md:w-auto">
             <FilterBar
-            category={categoryFilter}
-            setCategory={handleCategoryChange} // Naya handler pass karein
-            typeFilter={typeFilter}
-            setTypeFilter={setTypeFilter}
-            subCategory={subCategoryFilter}
-            setSubCategory={setSubCategoryFilter}
-            allSubCategories={allSubCategories}
-            allCategories={allCategories}
-            allTypeFilters={allTypes}            onClearFilters={handleClearFilters} // Clear filters handler pass karein
-            showClearButton={isAnyFilterActive} // Button dikhane ki condition pass karein
-          />
+              category={categoryFilter}
+              setCategory={handleCategoryChange} // Naya handler pass karein
+              typeFilter={typeFilter}
+              setTypeFilter={setTypeFilter}
+              subCategory={subCategoryFilter}
+              setSubCategory={setSubCategoryFilter}
+              allSubCategories={allSubCategories}
+              allCategories={allCategories}
+              allTypeFilters={allTypes}
+              onClearFilters={handleClearFilters} // Clear filters handler pass karein
+              showClearButton={isAnyFilterActive} // Button dikhane ki condition pass karein
+            />
           </div>
         </div>
       </div>

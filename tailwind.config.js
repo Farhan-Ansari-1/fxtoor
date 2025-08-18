@@ -4,6 +4,7 @@ module.exports = {
   darkMode: 'class',
   // Un sabhi files ka path dein jahan aap Tailwind classes use kar rahe hain
   content: [
+    "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
