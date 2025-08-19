@@ -1,0 +1,8 @@
+# Sabhi files ko text maano aur LF line endings use karo
+* text=auto eol=lf
+
+# Windows-specific files ke liye CRLF use karo
+*.{cmd,bat,ps1} text eol=crlf
+
+# Binary files ko jaisa hai waisa hi rehne do
+*.{png,jpg,jpeg,gif,ico,pdf,zip,gz} binary

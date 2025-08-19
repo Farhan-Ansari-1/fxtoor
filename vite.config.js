@@ -2,17 +2,19 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  base: '/fxtoor/',
-  server: {
-    port: 3000,
-    proxy: {
-      // Woh sabhi requests jo '/api' se shuru hote hain, unhe backend server par bhej do
-      '/api': {
-        target: 'http://localhost:5000', // Yahan apne backend server ka address daalein
-        changeOrigin: true,
-      }
+export default defineConfig(({ command }) => {
+  if (command === 'serve') {
+    return {
+      plugins: [react()],
+      base: '/',
+      server: {
+        port: 5173,
+      },
+    }
+  } else {
+    return {
+      plugins: [react()],
+      base: '/fxtoor/', // yaha repo ka naam daalna
     }
   }
 })
