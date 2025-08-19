@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import qrCodeImage from "../assets/qr-code.png";
 import BrandName from "./BrandName.jsx";
 
 export default function Header() {
@@ -60,7 +59,7 @@ export default function Header() {
             </p>
 
             <img
-              src={qrCodeImage}
+              src={`${import.meta.env.BASE_URL}qr-code.png`}
               alt="Donation QR Code"
               className="w-56 h-56 mx-auto border-4 border-gray-200 rounded-lg"
             />

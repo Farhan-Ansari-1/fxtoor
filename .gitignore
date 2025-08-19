@@ -1,16 +1,9 @@
 # Dependencies
 /node_modules
 
-# Build output
-/dist
 # Vite
 /dist
 .vite
-
-# dependencies
-/node_modules
-
-
 
 # Logs
 npm-debug.log*

@@ -2,8 +2,8 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 
-// Components aur Pages ko import karein (sahi path ke saath)
-import Navbar from './components/Navbar';
+// Components aur Pages ko import karein
+import Header from './components/Header'; // Navbar ki jagah Header import karein
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -16,7 +16,7 @@ export default function App() {
   return (
     <ThemeProvider>
       <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
-        <Navbar />
+        <Header /> {/* Yahan Navbar ki jagah Header component use karein */}
 
         <main className="flex-grow container mx-auto px-4">
           <Routes>
