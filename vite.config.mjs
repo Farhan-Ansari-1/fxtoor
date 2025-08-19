@@ -8,8 +8,13 @@ export default defineConfig(({ command }) => {
     plugins: [
       react(),
       sitemap({
-        hostname: 'https://Farhan-Ansari-1.github.io/fxtoor',
-        // Yeh plugin aapke saare pages ko automatically dhoondh lega
+        hostname: 'https://Farhan-Ansari-1.github.io',
+        dynamicRoutes: [
+          '/about',
+          '/contact',
+          '/privacy',
+          '/terms'
+        ]
       }),
     ],
     base: command === 'serve' ? '/' : '/fxtoor/', // dev me '/' aur prod me repo name
