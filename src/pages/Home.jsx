@@ -35,7 +35,7 @@ export default function Home() {
     const fetchTools = async () => {
       try {
         // tools.json ko public folder se fetch karein
-        const response = await fetch('/tools.json');
+        const response = await fetch(`${import.meta.env.BASE_URL}tools.json`); // <-- ISKO AISA KARNA HAI
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
