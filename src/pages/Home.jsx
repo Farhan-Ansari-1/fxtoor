@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import SearchBar from './../components/SearchBar';
 import FilterBar from './../components/FilterBar';
 import ToolList from './../components/ToolList';
@@ -118,6 +119,13 @@ export default function Home() {
 
   return (
     <div className="container mx-auto px-4 py-8">
+      <Helmet>
+        <title>fxtoor - AI & Cybersecurity Tools Directory</title>
+        <meta
+          name="description"
+          content="A curated directory of the best AI and Cybersecurity tools. Find, filter, and explore top-rated tools for your projects, from language models to network security."
+        />
+      </Helmet>
       {/* Control Bar ko thoda saaf-suthra banayein */}
       <div className="mb-8 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
         <div className="flex flex-col md:flex-row gap-4 items-center justify-between">

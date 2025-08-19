@@ -1,10 +1,18 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import BrandName from '../components/BrandName';
 import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
     <div className="container mx-auto px-4 py-12">
+      <Helmet>
+        <title>About Us - fxtoor</title>
+        <meta
+          name="description"
+          content="Learn more about fxtoor, our mission to provide a comprehensive and curated directory of the best AI and Cybersecurity tools for developers, students, and enthusiasts."
+        />
+      </Helmet>
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-4xl font-bold text-gray-800 dark:text-white mb-6">About <BrandName /></h1>
         <div className="text-lg text-gray-600 dark:text-gray-300 space-y-4 text-left">
