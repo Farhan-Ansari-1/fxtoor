@@ -1,20 +1,13 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => {
-  if (command === 'serve') {
-    return {
-      plugins: [react()],
-      base: '/',
-      server: {
-        port: 5173,
-      },
-    }
-  } else {
-    return {
-      plugins: [react()],
-      base: '/fxtoor/', // yaha repo ka naam daalna
-    }
-  }
-})
+  return {
+    plugins: [react()],
+    base: command === 'serve' ? '/' : '/fxtoor/', // dev me '/' aur prod me repo name
+    server: {
+      port: command === 'serve' ? 5173 : undefined, // sirf dev me port set hoga
+    },
+  };
+});
