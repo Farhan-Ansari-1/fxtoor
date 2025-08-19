@@ -1,0 +1,45 @@
+# GitHub Pages par static content deploy karne ke liye simple workflow
+name: Deploy static content to Pages
+
+on:
+  # Default branch par push hone par chalta hai
+  push:
+    branches: ["main"]
+
+  # Aapko Actions tab se is workflow ko manually chalane ki anumati deta hai
+  workflow_dispatch:
+
+# GITHUB_TOKEN ke permissions set karta hai taaki GitHub Pages par deployment ho sake
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # dist folder ko upload karein
+          path: './build'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
