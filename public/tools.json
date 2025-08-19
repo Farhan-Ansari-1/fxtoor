@@ -1,7 +1,6 @@
-
 [
   {
-    "id": "chatgpt-01",
+    "id": "tool-001",
     "name": "ChatGPT",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
@@ -10,7 +9,7 @@
     "type": "Freemium"
   },
   {
-    "id": "claude-ai-02",
+    "id": "tool-002",
     "name": "Claude AI",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
@@ -19,7 +18,7 @@
     "type": "Freemium"
   },
   {
-    "id": "gemini-ai-03",
+    "id": "tool-003",
     "name": "Gemini AI (ex-Bard)",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
@@ -28,6 +27,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-004",
     "name": "Perplexity AI",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
@@ -36,6 +36,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-005",
     "name": "YouChat",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
@@ -44,6 +45,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-006",
     "name": "Poe AI",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
@@ -52,6 +54,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-007",
     "name": "Jasper AI",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
@@ -60,6 +63,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-008",
     "name": "Copy.ai",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
@@ -68,6 +72,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-009",
     "name": "Writesonic",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
@@ -76,6 +81,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-010",
     "name": "Anyword",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
@@ -84,6 +90,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-011",
     "name": "Rytr",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
@@ -92,6 +99,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-012",
     "name": "Peppertype.ai",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
@@ -100,6 +108,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-013",
     "name": "Quillbot",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
@@ -108,6 +117,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-014",
     "name": "GrammarlyGO",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
@@ -116,6 +126,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-015",
     "name": "DeepAI Chat",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
@@ -124,6 +135,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-016",
     "name": "Midjourney",
     "mainCategory": "AI",
     "subCategory": "Image Generation",
@@ -132,6 +144,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-017",
     "name": "DALL·E 3",
     "mainCategory": "AI",
     "subCategory": "Image Generation",
@@ -140,6 +153,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-018",
     "name": "Stable Diffusion",
     "mainCategory": "AI",
     "subCategory": "Image Generation",
@@ -148,6 +162,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-019",
     "name": "Playground AI",
     "mainCategory": "AI",
     "subCategory": "Image Generation",
@@ -156,6 +171,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-020",
     "name": "Fotor AI",
     "mainCategory": "AI",
     "subCategory": "Image Generation",
@@ -164,6 +180,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-021",
     "name": "NightCafe Studio",
     "mainCategory": "AI",
     "subCategory": "Image Generation",
@@ -172,6 +189,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-022",
     "name": "Leonardo AI",
     "mainCategory": "AI",
     "subCategory": "Image Generation",
@@ -180,6 +198,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-023",
     "name": "Artbreeder",
     "mainCategory": "AI",
     "subCategory": "Image Generation",
@@ -188,6 +207,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-024",
     "name": "RunDiffusion",
     "mainCategory": "AI",
     "subCategory": "Image Generation",
@@ -196,6 +216,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-025",
     "name": "DeepAI Image Generator",
     "mainCategory": "AI",
     "subCategory": "Image Generation",
@@ -204,6 +225,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-026",
     "name": "Runway ML",
     "mainCategory": "AI",
     "subCategory": "Video Tools",
@@ -212,6 +234,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-027",
     "name": "Synthesia",
     "mainCategory": "AI",
     "subCategory": "Video Tools",
@@ -220,6 +243,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-028",
     "name": "Pika Labs",
     "mainCategory": "AI",
     "subCategory": "Video Tools",
@@ -228,6 +252,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-029",
     "name": "InVideo AI",
     "mainCategory": "AI",
     "subCategory": "Video Tools",
@@ -236,6 +261,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-030",
     "name": "Lumen5",
     "mainCategory": "AI",
     "subCategory": "Video Tools",
@@ -244,6 +270,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-031",
     "name": "Veed.io AI",
     "mainCategory": "AI",
     "subCategory": "Video Tools",
@@ -252,6 +279,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-032",
     "name": "Designs.ai Video",
     "mainCategory": "AI",
     "subCategory": "Video Tools",
@@ -260,6 +288,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-033",
     "name": "Rephrase.ai",
     "mainCategory": "AI",
     "subCategory": "Video Tools",
@@ -268,6 +297,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-034",
     "name": "Elai.io",
     "mainCategory": "AI",
     "subCategory": "Video Tools",
@@ -276,6 +306,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-035",
     "name": "Colossyan Creator",
     "mainCategory": "AI",
     "subCategory": "Video Tools",
@@ -284,6 +315,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-036",
     "name": "ElevenLabs",
     "mainCategory": "AI",
     "subCategory": "Audio & Voice",
@@ -292,6 +324,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-037",
     "name": "Murf.ai",
     "mainCategory": "AI",
     "subCategory": "Audio & Voice",
@@ -300,6 +333,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-038",
     "name": "Speechelo",
     "mainCategory": "AI",
     "subCategory": "Audio & Voice",
@@ -308,6 +342,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-039",
     "name": "Play.ht",
     "mainCategory": "AI",
     "subCategory": "Audio & Voice",
@@ -316,6 +351,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-040",
     "name": "Descript Overdub",
     "mainCategory": "AI",
     "subCategory": "Audio & Voice",
@@ -324,6 +360,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-041",
     "name": "Listnr",
     "mainCategory": "AI",
     "subCategory": "Audio & Voice",
@@ -332,6 +369,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-042",
     "name": "LOVO AI",
     "mainCategory": "AI",
     "subCategory": "Audio & Voice",
@@ -340,6 +378,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-043",
     "name": "Resemble AI",
     "mainCategory": "AI",
     "subCategory": "Audio & Voice",
@@ -348,6 +387,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-044",
     "name": "Cleanvoice AI",
     "mainCategory": "AI",
     "subCategory": "Audio & Voice",
@@ -356,6 +396,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-045",
     "name": "Coqui TTS",
     "mainCategory": "AI",
     "subCategory": "Audio & Voice",
@@ -364,6 +405,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-046",
     "name": "GitHub Copilot",
     "mainCategory": "AI",
     "subCategory": "Code Assistants",
@@ -372,6 +414,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-047",
     "name": "Tabnine",
     "mainCategory": "AI",
     "subCategory": "Code Assistants",
@@ -380,6 +423,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-048",
     "name": "Codeium",
     "mainCategory": "AI",
     "subCategory": "Code Assistants",
@@ -388,6 +432,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-049",
     "name": "Replit Ghostwriter",
     "mainCategory": "AI",
     "subCategory": "Code Assistants",
@@ -396,6 +441,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-050",
     "name": "Amazon CodeWhisperer",
     "mainCategory": "AI",
     "subCategory": "Code Assistants",
@@ -404,6 +450,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-051",
     "name": "Mutable AI",
     "mainCategory": "AI",
     "subCategory": "Code Assistants",
@@ -412,6 +459,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-052",
     "name": "DeepCode AI",
     "mainCategory": "AI",
     "subCategory": "Code Assistants",
@@ -420,6 +468,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-053",
     "name": "SourceAI",
     "mainCategory": "AI",
     "subCategory": "Code Assistants",
@@ -428,6 +477,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-054",
     "name": "ChatGPT Code Interpreter",
     "mainCategory": "AI",
     "subCategory": "Code Assistants",
@@ -436,6 +486,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-055",
     "name": "Warp AI",
     "mainCategory": "AI",
     "subCategory": "Code Assistants",
@@ -444,6 +495,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-056",
     "name": "Elicit.org",
     "mainCategory": "AI",
     "subCategory": "Research & Knowledge",
@@ -452,6 +504,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-057",
     "name": "Scispace",
     "mainCategory": "AI",
     "subCategory": "Research & Knowledge",
@@ -460,6 +513,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-058",
     "name": "Consensus AI",
     "mainCategory": "AI",
     "subCategory": "Research & Knowledge",
@@ -468,6 +522,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-059",
     "name": "Scholarcy",
     "mainCategory": "AI",
     "subCategory": "Research & Knowledge",
@@ -476,6 +531,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-060",
     "name": "Explainpaper",
     "mainCategory": "AI",
     "subCategory": "Research & Knowledge",
@@ -484,6 +540,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-061",
     "name": "Humata AI",
     "mainCategory": "AI",
     "subCategory": "Research & Knowledge",
@@ -492,6 +549,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-062",
     "name": "Jenni AI",
     "mainCategory": "AI",
     "subCategory": "Research & Knowledge",
@@ -500,6 +558,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-063",
     "name": "ScholarAI",
     "mainCategory": "AI",
     "subCategory": "Research & Knowledge",
@@ -508,6 +567,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-064",
     "name": "ReadCube Papers",
     "mainCategory": "AI",
     "subCategory": "Research & Knowledge",
@@ -516,6 +576,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-065",
     "name": "Litmaps",
     "mainCategory": "AI",
     "subCategory": "Research & Knowledge",
@@ -524,6 +585,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-066",
     "name": "Notion AI",
     "mainCategory": "AI",
     "subCategory": "Business & Productivity",
@@ -532,6 +594,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-067",
     "name": "Taskade AI",
     "mainCategory": "AI",
     "subCategory": "Business & Productivity",
@@ -540,6 +603,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-068",
     "name": "Motion AI",
     "mainCategory": "AI",
     "subCategory": "Business & Productivity",
@@ -548,6 +612,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-069",
     "name": "ClickUp AI",
     "mainCategory": "AI",
     "subCategory": "Business & Productivity",
@@ -556,6 +621,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-070",
     "name": "Trello AI Power-Up",
     "mainCategory": "AI",
     "subCategory": "Business & Productivity",
@@ -564,6 +630,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-071",
     "name": "Fellow AI",
     "mainCategory": "AI",
     "subCategory": "Business & Productivity",
@@ -572,6 +639,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-072",
     "name": "Tome AI",
     "mainCategory": "AI",
     "subCategory": "Business & Productivity",
@@ -580,6 +648,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-073",
     "name": "Beautiful.ai",
     "mainCategory": "AI",
     "subCategory": "Business & Productivity",
@@ -588,6 +657,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-074",
     "name": "Pitch AI",
     "mainCategory": "AI",
     "subCategory": "Business & Productivity",
@@ -596,6 +666,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-075",
     "name": "Canva Magic Write",
     "mainCategory": "AI",
     "subCategory": "Business & Productivity",
@@ -604,6 +675,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-076",
     "name": "Uizard",
     "mainCategory": "AI",
     "subCategory": "Design Tools",
@@ -612,6 +684,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-077",
     "name": "Figma AI",
     "mainCategory": "AI",
     "subCategory": "Design Tools",
@@ -620,6 +693,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-078",
     "name": "Khroma AI",
     "mainCategory": "AI",
     "subCategory": "Design Tools",
@@ -628,6 +702,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-079",
     "name": "Fontjoy",
     "mainCategory": "AI",
     "subCategory": "Design Tools",
@@ -636,6 +711,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-080",
     "name": "Remove.bg",
     "mainCategory": "AI",
     "subCategory": "Design Tools",
@@ -644,6 +720,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-081",
     "name": "Cleanup.pictures",
     "mainCategory": "AI",
     "subCategory": "Design Tools",
@@ -652,6 +729,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-082",
     "name": "Let's Enhance",
     "mainCategory": "AI",
     "subCategory": "Design Tools",
@@ -660,6 +738,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-083",
     "name": "Hotpot.ai",
     "mainCategory": "AI",
     "subCategory": "Design Tools",
@@ -668,6 +747,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-084",
     "name": "Designify",
     "mainCategory": "AI",
     "subCategory": "Design Tools",
@@ -676,6 +756,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-085",
     "name": "Illustroke",
     "mainCategory": "AI",
     "subCategory": "Design Tools",
@@ -684,6 +765,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-086",
     "name": "Surfer SEO AI",
     "mainCategory": "AI",
     "subCategory": "Marketing & SEO",
@@ -692,6 +774,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-087",
     "name": "Frase.io",
     "mainCategory": "AI",
     "subCategory": "Marketing & SEO",
@@ -700,6 +783,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-088",
     "name": "Clearscope AI",
     "mainCategory": "AI",
     "subCategory": "Marketing & SEO",
@@ -708,6 +792,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-089",
     "name": "NeuronWriter",
     "mainCategory": "AI",
     "subCategory": "Marketing & SEO",
@@ -716,6 +801,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-090",
     "name": "MarketMuse AI",
     "mainCategory": "AI",
     "subCategory": "Marketing & SEO",
@@ -724,6 +810,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-091",
     "name": "Outranking.io",
     "mainCategory": "AI",
     "subCategory": "Marketing & SEO",
@@ -732,6 +819,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-092",
     "name": "Keyword Insights AI",
     "mainCategory": "AI",
     "subCategory": "Marketing & SEO",
@@ -740,6 +828,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-093",
     "name": "Scalenut",
     "mainCategory": "AI",
     "subCategory": "Marketing & SEO",
@@ -748,6 +837,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-094",
     "name": "Inkforall",
     "mainCategory": "AI",
     "subCategory": "Marketing & SEO",
@@ -756,6 +846,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-095",
     "name": "LongShot AI",
     "mainCategory": "AI",
     "subCategory": "Marketing & SEO",
@@ -764,6 +855,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-096",
     "name": "Predis.ai",
     "mainCategory": "AI",
     "subCategory": "Social Media Tools",
@@ -772,6 +864,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-097",
     "name": "SocialBee AI",
     "mainCategory": "AI",
     "subCategory": "Social Media Tools",
@@ -780,6 +873,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-098",
     "name": "Ocoya AI",
     "mainCategory": "AI",
     "subCategory": "Social Media Tools",
@@ -788,6 +882,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-099",
     "name": "Publer AI",
     "mainCategory": "AI",
     "subCategory": "Social Media Tools",
@@ -796,6 +891,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-100",
     "name": "Postwise AI",
     "mainCategory": "AI",
     "subCategory": "Social Media Tools",
@@ -804,6 +900,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-101",
     "name": "ViralKit AI",
     "mainCategory": "AI",
     "subCategory": "Social Media Tools",
@@ -812,6 +909,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-102",
     "name": "Hootsuite OwlyWriter",
     "mainCategory": "AI",
     "subCategory": "Social Media Tools",
@@ -820,6 +918,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-103",
     "name": "Buffer AI Assistant",
     "mainCategory": "AI",
     "subCategory": "Social Media Tools",
@@ -828,6 +927,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-104",
     "name": "TweetHunter AI",
     "mainCategory": "AI",
     "subCategory": "Social Media Tools",
@@ -836,6 +936,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-105",
     "name": "CopyMonkey AI",
     "mainCategory": "AI",
     "subCategory": "Marketing & SEO",
@@ -844,6 +945,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-106",
     "name": "Khanmigo (Khan Academy)",
     "mainCategory": "AI",
     "subCategory": "Education Tools",
@@ -852,6 +954,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-107",
     "name": "Quizlet Q-Chat",
     "mainCategory": "AI",
     "subCategory": "Education Tools",
@@ -860,6 +963,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-108",
     "name": "Socratic AI",
     "mainCategory": "AI",
     "subCategory": "Education Tools",
@@ -868,6 +972,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-109",
     "name": "Scribe AI",
     "mainCategory": "AI",
     "subCategory": "Education Tools",
@@ -876,6 +981,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-110",
     "name": "Teachermatic AI",
     "mainCategory": "AI",
     "subCategory": "Education Tools",
@@ -884,6 +990,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-111",
     "name": "Edpuzzle AI",
     "mainCategory": "AI",
     "subCategory": "Education Tools",
@@ -892,6 +999,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-112",
     "name": "MagicSchool.ai",
     "mainCategory": "AI",
     "subCategory": "Education Tools",
@@ -900,6 +1008,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-113",
     "name": "Brisk Teaching",
     "mainCategory": "AI",
     "subCategory": "Education Tools",
@@ -908,6 +1017,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-114",
     "name": "Gradescope AI",
     "mainCategory": "AI",
     "subCategory": "Education Tools",
@@ -916,6 +1026,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-115",
     "name": "Explain Everything AI",
     "mainCategory": "AI",
     "subCategory": "Education Tools",
@@ -924,6 +1035,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-116",
     "name": "BioGPT",
     "mainCategory": "AI",
     "subCategory": "Medical & Science",
@@ -932,6 +1044,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-117",
     "name": "IBM Watson Health",
     "mainCategory": "AI",
     "subCategory": "Medical & Science",
@@ -940,6 +1053,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-118",
     "name": "PathAI",
     "mainCategory": "AI",
     "subCategory": "Medical & Science",
@@ -948,6 +1062,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-119",
     "name": "Enlitic",
     "mainCategory": "AI",
     "subCategory": "Medical & Science",
@@ -956,6 +1071,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-120",
     "name": "Paige AI",
     "mainCategory": "AI",
     "subCategory": "Medical & Science",
@@ -964,6 +1080,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-121",
     "name": "Viz.ai",
     "mainCategory": "AI",
     "subCategory": "Medical & Science",
@@ -972,6 +1089,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-122",
     "name": "DeepMind AlphaFold",
     "mainCategory": "AI",
     "subCategory": "Medical & Science",
@@ -980,6 +1098,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-123",
     "name": "Butterfly Network AI",
     "mainCategory": "AI",
     "subCategory": "Medical & Science",
@@ -988,6 +1107,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-124",
     "name": "Tempus AI",
     "mainCategory": "AI",
     "subCategory": "Medical & Science",
@@ -996,6 +1116,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-125",
     "name": "Aidoc",
     "mainCategory": "AI",
     "subCategory": "Medical & Science",
@@ -1004,6 +1125,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-126",
     "name": "Harvey AI",
     "mainCategory": "AI",
     "subCategory": "Legal & Finance",
@@ -1012,6 +1134,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-127",
     "name": "Spellbook",
     "mainCategory": "AI",
     "subCategory": "Legal & Finance",
@@ -1020,6 +1143,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-128",
     "name": "Luminance",
     "mainCategory": "AI",
     "subCategory": "Legal & Finance",
@@ -1028,6 +1152,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-129",
     "name": "DoNotPay",
     "mainCategory": "AI",
     "subCategory": "Legal & Finance",
@@ -1036,6 +1161,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-130",
     "name": "Lawgeex",
     "mainCategory": "AI",
     "subCategory": "Legal & Finance",
@@ -1044,6 +1170,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-131",
     "name": "Klarity",
     "mainCategory": "AI",
     "subCategory": "Legal & Finance",
@@ -1052,6 +1179,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-132",
     "name": "Kira Systems",
     "mainCategory": "AI",
     "subCategory": "Legal & Finance",
@@ -1060,6 +1188,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-133",
     "name": "Xtract.ai",
     "mainCategory": "AI",
     "subCategory": "Legal & Finance",
@@ -1068,6 +1197,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-134",
     "name": "Zest AI",
     "mainCategory": "AI",
     "subCategory": "Legal & Finance",
@@ -1076,6 +1206,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-135",
     "name": "Cleo AI",
     "mainCategory": "AI",
     "subCategory": "Legal & Finance",
@@ -1084,6 +1215,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-136",
     "name": "Character.ai",
     "mainCategory": "AI",
     "subCategory": "Creative & Fun",
@@ -1092,6 +1224,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-137",
     "name": "Inworld AI",
     "mainCategory": "AI",
     "subCategory": "Creative & Fun",
@@ -1100,6 +1233,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-138",
     "name": "Replika AI",
     "mainCategory": "AI",
     "subCategory": "Creative & Fun",
@@ -1108,6 +1242,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-139",
     "name": "AI Dungeon",
     "mainCategory": "AI",
     "subCategory": "Creative & Fun",
@@ -1116,6 +1251,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-140",
     "name": "NovelAI",
     "mainCategory": "AI",
     "subCategory": "Creative & Fun",
@@ -1124,6 +1260,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-141",
     "name": "Storybird AI",
     "mainCategory": "AI",
     "subCategory": "Creative & Fun",
@@ -1132,6 +1269,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-142",
     "name": "SongR",
     "mainCategory": "AI",
     "subCategory": "Creative & Fun",
@@ -1140,6 +1278,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-143",
     "name": "Beatoven.ai",
     "mainCategory": "AI",
     "subCategory": "Creative & Fun",
@@ -1148,6 +1287,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-144",
     "name": "Boomy AI",
     "mainCategory": "AI",
     "subCategory": "Creative & Fun",
@@ -1156,6 +1296,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-145",
     "name": "LyricStudio",
     "mainCategory": "AI",
     "subCategory": "Creative & Fun",
@@ -1164,6 +1305,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-146",
     "name": "FlowGPT",
     "mainCategory": "AI",
     "subCategory": "Miscellaneous",
@@ -1172,6 +1314,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-147",
     "name": "PromptHero",
     "mainCategory": "AI",
     "subCategory": "Miscellaneous",
@@ -1180,6 +1323,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-148",
     "name": "PromptBase",
     "mainCategory": "AI",
     "subCategory": "Miscellaneous",
@@ -1188,6 +1332,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-149",
     "name": "AIPRM for ChatGPT",
     "mainCategory": "AI",
     "subCategory": "Miscellaneous",
@@ -1196,6 +1341,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-150",
     "name": "FutureTools.io",
     "mainCategory": "AI",
     "subCategory": "Miscellaneous",
@@ -1204,6 +1350,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-151",
     "name": "Nmap",
     "mainCategory": "Cybersecurity",
     "subCategory": "Network Security & Scanning",
@@ -1212,6 +1359,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-152",
     "name": "Zenmap",
     "mainCategory": "Cybersecurity",
     "subCategory": "Network Security & Scanning",
@@ -1220,6 +1368,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-153",
     "name": "Angry IP Scanner",
     "mainCategory": "Cybersecurity",
     "subCategory": "Network Security & Scanning",
@@ -1228,6 +1377,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-154",
     "name": "Advanced IP Scanner",
     "mainCategory": "Cybersecurity",
     "subCategory": "Network Security & Scanning",
@@ -1236,6 +1386,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-155",
     "name": "Netcat",
     "mainCategory": "Cybersecurity",
     "subCategory": "Network Security & Scanning",
@@ -1244,6 +1395,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-156",
     "name": "OpenVAS",
     "mainCategory": "Cybersecurity",
     "subCategory": "Vulnerability Assessment",
@@ -1252,6 +1404,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-157",
     "name": "Masscan",
     "mainCategory": "Cybersecurity",
     "subCategory": "Network Security & Scanning",
@@ -1260,6 +1413,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-158",
     "name": "Unicornscan",
     "mainCategory": "Cybersecurity",
     "subCategory": "Network Security & Scanning",
@@ -1268,6 +1422,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-159",
     "name": "Ettercap",
     "mainCategory": "Cybersecurity",
     "subCategory": "Wireless & Network Hacking",
@@ -1276,6 +1431,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-160",
     "name": "DNSdumpster",
     "mainCategory": "Cybersecurity",
     "subCategory": "Network Security & Scanning",
@@ -1284,6 +1440,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-161",
     "name": "Metasploit Framework",
     "mainCategory": "Cybersecurity",
     "subCategory": "Penetration Testing Frameworks",
@@ -1292,6 +1449,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-162",
     "name": "Cobalt Strike",
     "mainCategory": "Cybersecurity",
     "subCategory": "Penetration Testing Frameworks",
@@ -1300,6 +1458,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-163",
     "name": "Empire",
     "mainCategory": "Cybersecurity",
     "subCategory": "Penetration Testing Frameworks",
@@ -1308,6 +1467,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-164",
     "name": "BeEF (Browser Exploitation Framework)",
     "mainCategory": "Cybersecurity",
     "subCategory": "Penetration Testing Frameworks",
@@ -1316,6 +1476,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-165",
     "name": "Core Impact",
     "mainCategory": "Cybersecurity",
     "subCategory": "Penetration Testing Frameworks",
@@ -1324,6 +1485,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-166",
     "name": "Nessus",
     "mainCategory": "Cybersecurity",
     "subCategory": "Vulnerability Assessment",
@@ -1332,6 +1494,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-167",
     "name": "QualysGuard",
     "mainCategory": "Cybersecurity",
     "subCategory": "Vulnerability Assessment",
@@ -1340,6 +1503,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-168",
     "name": "Nexpose",
     "mainCategory": "Cybersecurity",
     "subCategory": "Vulnerability Assessment",
@@ -1348,6 +1512,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-169",
     "name": "Acunetix",
     "mainCategory": "Cybersecurity",
     "subCategory": "Vulnerability Assessment",
@@ -1356,6 +1521,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-170",
     "name": "Burp Suite",
     "mainCategory": "Cybersecurity",
     "subCategory": "Vulnerability Assessment",
@@ -1364,6 +1530,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-171",
     "name": "OWASP ZAP",
     "mainCategory": "Cybersecurity",
     "subCategory": "Web Application Security",
@@ -1372,6 +1539,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-172",
     "name": "Wapiti",
     "mainCategory": "Cybersecurity",
     "subCategory": "Web Application Security",
@@ -1380,6 +1548,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-173",
     "name": "Nikto",
     "mainCategory": "Cybersecurity",
     "subCategory": "Web Application Security",
@@ -1388,6 +1557,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-174",
     "name": "Arachni",
     "mainCategory": "Cybersecurity",
     "subCategory": "Web Application Security",
@@ -1396,6 +1566,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-175",
     "name": "Vega Scanner",
     "mainCategory": "Cybersecurity",
     "subCategory": "Web Application Security",
@@ -1404,6 +1575,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-176",
     "name": "Aircrack-ng",
     "mainCategory": "Cybersecurity",
     "subCategory": "Wireless & Network Hacking",
@@ -1412,6 +1584,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-177",
     "name": "Kismet",
     "mainCategory": "Cybersecurity",
     "subCategory": "Wireless & Network Hacking",
@@ -1420,6 +1593,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-178",
     "name": "Wireshark",
     "mainCategory": "Cybersecurity",
     "subCategory": "Wireless & Network Hacking",
@@ -1428,6 +1602,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-179",
     "name": "CommView for WiFi",
     "mainCategory": "Cybersecurity",
     "subCategory": "Wireless & Network Hacking",
@@ -1436,6 +1611,7 @@
     "type": "Paid"
   },
   {
+    "id": "tool-180",
     "name": "Reaver",
     "mainCategory": "Cybersecurity",
     "subCategory": "Wireless & Network Hacking",
@@ -1444,6 +1620,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-181",
     "name": "John the Ripper",
     "mainCategory": "Cybersecurity",
     "subCategory": "Password Cracking & Recovery",
@@ -1452,6 +1629,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-182",
     "name": "Hashcat",
     "mainCategory": "Cybersecurity",
     "subCategory": "Password Cracking & Recovery",
@@ -1460,6 +1638,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-183",
     "name": "Hydra",
     "mainCategory": "Cybersecurity",
     "subCategory": "Password Cracking & Recovery",
@@ -1468,6 +1647,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-184",
     "name": "Cain & Abel",
     "mainCategory": "Cybersecurity",
     "subCategory": "Password Cracking & Recovery",
@@ -1476,6 +1656,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-185",
     "name": "Ophcrack",
     "mainCategory": "Cybersecurity",
     "subCategory": "Password Cracking & Recovery",
@@ -1484,6 +1665,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-186",
     "name": "Autopsy",
     "mainCategory": "Cybersecurity",
     "subCategory": "Digital Forensics & Incident Response",
@@ -1492,6 +1674,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-187",
     "name": "FTK Imager",
     "mainCategory": "Cybersecurity",
     "subCategory": "Digital Forensics & Incident Response",
@@ -1500,6 +1683,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-188",
     "name": "Volatility",
     "mainCategory": "Cybersecurity",
     "subCategory": "Digital Forensics & Incident Response",
@@ -1508,6 +1692,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-189",
     "name": "Cuckoo Sandbox",
     "mainCategory": "Cybersecurity",
     "subCategory": "Malware Analysis",
@@ -1516,6 +1701,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-190",
     "name": "REMnux",
     "mainCategory": "Cybersecurity",
     "subCategory": "Malware Analysis",
@@ -1524,6 +1710,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-191",
     "name": "PEiD",
     "mainCategory": "Cybersecurity",
     "subCategory": "Malware Analysis",
@@ -1532,6 +1719,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-192",
     "name": "Maltego",
     "mainCategory": "Cybersecurity",
     "subCategory": "Malware Analysis",
@@ -1540,6 +1728,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-193",
     "name": "Ghidra",
     "mainCategory": "Cybersecurity",
     "subCategory": "Malware Analysis",
@@ -1548,6 +1737,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-194",
     "name": "ScoutSuite",
     "mainCategory": "Cybersecurity",
     "subCategory": "Cloud & Container Security",
@@ -1556,6 +1746,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-195",
     "name": "Trivy",
     "mainCategory": "Cybersecurity",
     "subCategory": "Cloud & Container Security",
@@ -1564,6 +1755,7 @@
     "type": "Free"
   },
   {
+    "id": "tool-196",
     "name": "Anchore",
     "mainCategory": "Cybersecurity",
     "subCategory": "Cloud & Container Security",
@@ -1572,6 +1764,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-197",
     "name": "CloudSploit",
     "mainCategory": "Cybersecurity",
     "subCategory": "Cloud & Container Security",
@@ -1580,6 +1773,7 @@
     "type": "Freemium"
   },
   {
+    "id": "tool-198",
     "name": "Falco",
     "mainCategory": "Cybersecurity",
     "subCategory": "Cloud & Container Security",

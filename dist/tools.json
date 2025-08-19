@@ -1,6 +1,7 @@
 
 [
   {
+    "id": "chatgpt-01",
     "name": "ChatGPT",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
@@ -9,6 +10,7 @@
     "type": "Freemium"
   },
   {
+    "id": "claude-ai-02",
     "name": "Claude AI",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
@@ -17,6 +19,7 @@
     "type": "Freemium"
   },
   {
+    "id": "gemini-ai-03",
     "name": "Gemini AI (ex-Bard)",
     "mainCategory": "AI",
     "subCategory": "Language Models & Chatbots",
