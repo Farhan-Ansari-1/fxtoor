@@ -10,8 +10,7 @@ export default defineConfig(({ command }) => {
     plugins: [
       react(),
       sitemap({
-        hostname: 'https://Farhan-Ansari-1.github.io',
-        base: base, // Base path alag se batayein
+        hostname: 'https://Farhan-Ansari-1.github.io/fxtoor', // <-- YEH HAI ASLI FIX
         dynamicRoutes: [
           '/about',
           '/contact',
