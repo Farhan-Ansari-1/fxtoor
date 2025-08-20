@@ -13,12 +13,6 @@ export default defineConfig(({ command }) => {
         hostname: 'https://Farhan-Ansari-1.github.io',
         basePath: base,
         readable: true,
-        dynamicRoutes: [
-          '/about',
-          '/contact',
-          '/privacy',
-          '/terms'
-        ],
         robots: [
           {
             userAgent: '*',
