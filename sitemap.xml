@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>
-            https://farhan-ansari-1.github.io/fxtoor//
+            https://farhan-ansari-1.github.io/fxtoor/
         </loc>
         <lastmod>
-            2025-08-20T19:43:35.201Z
+            2025-08-20T19:47:58.108Z
         </lastmod>
         <changefreq>
             daily
         </changefreq>
         <priority>
-            1.0
+            0.7
         </priority>
     </url>
     <url>
         <loc>
-            https://farhan-ansari-1.github.io/fxtoor//about
+            https://farhan-ansari-1.github.io/fxtoor/about
         </loc>
         <lastmod>
-            2025-08-20T19:43:35.201Z
+            2025-08-20T19:47:58.108Z
         </lastmod>
         <changefreq>
             daily
         </changefreq>
         <priority>
-            1.0
+            0.7
         </priority>
     </url>
     <url>
         <loc>
-            https://farhan-ansari-1.github.io/fxtoor//contact
+            https://farhan-ansari-1.github.io/fxtoor/contact
         </loc>
         <lastmod>
-            2025-08-20T19:43:35.201Z
+            2025-08-20T19:47:58.108Z
         </lastmod>
         <changefreq>
             daily
         </changefreq>
         <priority>
-            1.0
+            0.7
         </priority>
     </url>
     <url>
         <loc>
-            https://farhan-ansari-1.github.io/fxtoor//privacy
+            https://farhan-ansari-1.github.io/fxtoor/privacy
         </loc>
         <lastmod>
-            2025-08-20T19:43:35.201Z
+            2025-08-20T19:47:58.108Z
         </lastmod>
         <changefreq>
             daily
         </changefreq>
         <priority>
-            1.0
+            0.7
         </priority>
     </url>
     <url>
         <loc>
-            https://farhan-ansari-1.github.io/fxtoor//terms
+            https://farhan-ansari-1.github.io/fxtoor/terms
         </loc>
         <lastmod>
-            2025-08-20T19:43:35.201Z
+            2025-08-20T19:47:58.108Z
         </lastmod>
         <changefreq>
             daily
         </changefreq>
         <priority>
-            1.0
+            0.7
         </priority>
     </url>
 </urlset>
