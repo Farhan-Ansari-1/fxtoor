@@ -13,7 +13,6 @@ export default defineConfig(({ command }) => {
         hostname: 'https://Farhan-Ansari-1.github.io',
         basePath: base,
         readable: true, // XML ko padhne me aasan banata hai
-        lastmod: null, // Future date ki problem ko fix karne ke liye
         dynamicRoutes: [
           '/about',
           '/contact',
