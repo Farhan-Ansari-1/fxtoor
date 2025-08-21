@@ -57,7 +57,9 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-sm text-gray-600 dark:text-gray-400">
             <p>
-              © {currentYear} <BrandName />. All Rights Reserved.
+              &copy; {currentYear}{' '}
+              <BrandName className="font-bold text-gray-700 dark:text-gray-300" />
+              . All Rights Reserved.
             </p>
             <p className="mt-1">
               Made by <a href="https://github.com/farhan-ansari-1" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline">farX</a>.

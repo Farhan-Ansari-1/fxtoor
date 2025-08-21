@@ -1,52 +1,91 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import BrandName from "./BrandName.jsx";
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 export default function Header() {
-  const [showModal, setShowModal] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSupportModalOpen, setIsSupportModalOpen] = useState(false);
 
-  const activeLinkStyle = {
+  const activeStyle = {
     color: '#2563eb', // blue-600
     fontWeight: '600',
   };
 
+  const closeMobileMenu = () => setIsMobileMenuOpen(false);
+
+  const navLinks = (
+    <>
+      <NavLink to="/" style={({ isActive }) => (isActive ? activeStyle : undefined)} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors" onClick={closeMobileMenu}>Home</NavLink>
+      <NavLink to="/about" style={({ isActive }) => (isActive ? activeStyle : undefined)} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors" onClick={closeMobileMenu}>About Us</NavLink>
+      <NavLink to="/contact" style={({ isActive }) => (isActive ? activeStyle : undefined)} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors" onClick={closeMobileMenu}>Contact Us</NavLink>
+    </>
+  );
+
   return (
     <>
-      <header className="bg-white shadow-sm border-b sticky top-0 z-10">
+      <header className="bg-white dark:bg-gray-800 shadow-sm border-b dark:border-gray-700 sticky top-0 z-20">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <NavLink to="/" className="text-2xl md:text-3xl font-bold">
-            <BrandName className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600" />
+          <NavLink to="/" className="text-2xl md:text-3xl font-bold" onClick={closeMobileMenu}>
+            <img 
+              src={`${import.meta.env.BASE_URL}logo192.png`}
+              alt="fXtooR Logo" 
+              className="h-8 w-auto" 
+            />
           </NavLink>
-          <div className="flex items-center gap-6">
-            <nav className="hidden md:flex items-center gap-6 text-gray-600">
-              <NavLink to="/" style={({ isActive }) => (isActive ? activeLinkStyle : undefined)} className="hover:text-blue-600 transition-colors">Home</NavLink>
-              <NavLink to="/about" style={({ isActive }) => (isActive ? activeLinkStyle : undefined)} className="hover:text-blue-600 transition-colors">About Us</NavLink>
-              <NavLink to="/contact" style={({ isActive }) => (isActive ? activeLinkStyle : undefined)} className="hover:text-blue-600 transition-colors">Contact Us</NavLink>
-            </nav>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-6 text-gray-600 dark:text-gray-300">
+            {navLinks}
+          </nav>
+
+          <div className="flex items-center gap-4">
+            {/* Support Button */}
             <button
-              onClick={() => setShowModal(true)}
-              className="bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600 transition-colors shadow-sm flex items-center gap-2 text-sm"
+              onClick={() => setIsSupportModalOpen(true)}
+              className="bg-blue-500 text-white px-3 sm:px-4 py-2 rounded-lg font-semibold hover:bg-blue-600 transition-colors shadow-sm flex items-center gap-2 text-sm"
             >
-              <span>Support Project</span>
+              <span>Support</span>
+              <span className="hidden sm:inline">Project</span>
               <span role="img" aria-label="coffee">
                 ☕
               </span>
             </button>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden">
+              <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                {isMobileMenuOpen ? (
+                  <XMarkIcon className="h-7 w-7" />
+                ) : (
+                  <Bars3Icon className="h-7 w-7" />
+                )}
+              </button>
+            </div>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-white dark:bg-gray-800 border-t dark:border-gray-700">
+            <nav className="container mx-auto px-4 py-4 flex flex-col items-center gap-4 text-gray-600 dark:text-gray-300">
+              {navLinks}
+            </nav>
+          </div>
+        )}
       </header>
 
-      {showModal && (
+      {/* Support Modal */}
+      {isSupportModalOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
-          onClick={() => setShowModal(false)}
+          onClick={() => setIsSupportModalOpen(false)}
         >
           <div
             className="bg-white p-8 rounded-xl shadow-2xl relative text-center transform transition-all"
             onClick={(e) => e.stopPropagation()}
           >
             <button
-              onClick={() => setShowModal(false)}
+              onClick={() => setIsSupportModalOpen(false)}
               className="absolute top-2 right-3 text-gray-500 hover:text-gray-800 text-3xl"
             >
               &times;
