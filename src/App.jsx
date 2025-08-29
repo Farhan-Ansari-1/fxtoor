@@ -12,6 +12,9 @@ import ContactUs from './pages/ContactUs';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import NotFound from './pages/NotFound';
 import TermsAndConditions from './pages/TermsAndConditions';
+import ScrollToTopButton from './components/ScrollToTopButton';
+import './components/ScrollToTopButton.css';
+
 
 export default function App() {
   return (
@@ -33,6 +36,7 @@ export default function App() {
           </main>
 
           <Footer />
+          <ScrollToTopButton />
         </div>
       </ThemeProvider>
     </HelmetProvider>

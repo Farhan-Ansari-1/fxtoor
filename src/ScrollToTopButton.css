@@ -1,0 +1,41 @@
+.scroll-to-top button {
+  position: fixed;
+  bottom: 2rem; /* Use rem for better scaling */
+  right: 2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem; /* Use rem for font size */
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s, transform 0.3s, background-color 0.3s;
+  display: flex; /* For better icon centering */
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-to-top button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.1);
+}
+
+/* Add active state for touch feedback */
+.scroll-to-top button:active {
+  background-color: #004a99;
+  transform: scale(0.95);
+}
+
+/* Media Query for smaller screens (e.g., mobile phones) */
+@media (max-width: 768px) {
+  .scroll-to-top button {
+    width: 45px;
+    height: 45px;
+    font-size: 1.25rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
