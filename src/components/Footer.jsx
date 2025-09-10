@@ -62,7 +62,7 @@ const Footer = () => {
               . All Rights Reserved.
             </p>
             <p className="mt-1">
-              Made by <a href="https://github.com/farhan-ansari-1" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline">farX</a>.
+              Made by <a href="https://farhan-ansari-1.github.io/farX-Portfolio/" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline">farX</a>.
             </p>
           </div>
         </div>
