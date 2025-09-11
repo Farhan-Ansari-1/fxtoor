@@ -17,6 +17,7 @@ export default function Header() {
     <>
       <NavLink to="/" style={({ isActive }) => (isActive ? activeStyle : undefined)} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors" onClick={closeMobileMenu}>Home</NavLink>
       <NavLink to="/about" style={({ isActive }) => (isActive ? activeStyle : undefined)} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors" onClick={closeMobileMenu}>About Us</NavLink>
+      <NavLink to="/blog" style={({ isActive }) => (isActive ? activeStyle : undefined)} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors" onClick={closeMobileMenu}>Blog</NavLink>
       <NavLink to="/contact" style={({ isActive }) => (isActive ? activeStyle : undefined)} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors" onClick={closeMobileMenu}>Contact Us</NavLink>
     </>
   );

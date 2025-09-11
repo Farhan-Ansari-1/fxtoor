@@ -8,6 +8,7 @@ const footerLinks = [
   { to: '/contact', label: 'Contact' },
   { to: '/privacy', label: 'Privacy Policy' },
   { to: '/terms', label: 'Terms & Conditions' },
+  { to: '/blog', label: 'Blog' },
 ];
 
 // Data for social media links

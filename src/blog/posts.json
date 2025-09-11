@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "title": "Welcome to fXtooR Blog",
+    "slug": "welcome-to-fxtoor",
+    "date": "2025-09-10",
+    "excerpt": "Yeh hamare blog ka pehla article hai.",
+    "content": "Yeh blog ka poora content hai. Yahan aap details likh sakte hain.\n\n### Markdown Features\n\nAap apne content mein **bold text**, *italic text*, aur `inline code` use kar sakte hain.\n\nAap lists bhi bana sakte hain:\n\n- Pehla item\n- Dusra item\n- Teesra item\n\nAur links bhi add kar sakte hain, jaise Google."
+  },
+  {
+    "id": "2",
+    "title": "Second Blog Post",
+    "slug": "second-blog-post",
+    "date": "2025-09-11",
+    "excerpt": "Dusra article jisme naye updates milenge.",
+    "content": "Yeh dusre post ka content hai."
+  }
+]

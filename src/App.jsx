@@ -14,6 +14,8 @@ import NotFound from './pages/NotFound';
 import TermsAndConditions from './pages/TermsAndConditions';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import './components/ScrollToTopButton.css';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 
 
 export default function App() {
@@ -30,6 +32,10 @@ export default function App() {
               <Route path="/contact" element={<ContactUs />} />
               <Route path="/privacy" element={<PrivacyPolicy />} />
               <Route path="/terms" element={<TermsAndConditions />} />
+              
+              {/* Blog Routes */}
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogPost />} />
               {/* Agar koi page na mile to NotFound page dikhayein */}
               <Route path="*" element={<NotFound />} />
             </Routes>
