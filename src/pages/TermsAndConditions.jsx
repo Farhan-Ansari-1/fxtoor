@@ -6,7 +6,7 @@ const TermsAndConditions = () => {
   return (
     <div className="bg-white dark:bg-gray-800 p-6 md:p-10 rounded-lg shadow-lg max-w-4xl mx-auto my-8 text-gray-700 dark:text-gray-300">
       <h1 className="text-3xl font-bold mb-4 text-center text-gray-900 dark:text-white">Terms & Conditions</h1>
-      <p className="text-center text-gray-500 dark:text-gray-400 mb-8">Effective Date: December 2, 2023</p>
+      <p className="text-center text-gray-500 dark:text-gray-400 mb-8">Effective Date: August 1, 2025</p>
 
       <p className="mb-6">
         Welcome to <BrandName />. By using our website, you agree to the following terms:

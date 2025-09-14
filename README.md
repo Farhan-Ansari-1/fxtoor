@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# fxtoor - AI & Cybersecurity Tools Directory
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`fxtoor` is a modern, fast, and free online directory designed to help you discover the best AI and Cybersecurity tools in one place. It's built for developers, students, and tech enthusiasts who want to find useful tools without endless searching.
 
-## Available Scripts
+## ✨ Features
+
+-   **Curated List:** A handpicked collection of top-tier AI and Cybersecurity tools.
+-   **Powerful Filtering:** Easily filter tools by main category (AI, Cybersecurity), sub-category, and type (Free, Paid, Freemium).
+-   **Instant Search:** Find tools quickly with a real-time search bar.
+-   **Responsive Design:** A seamless experience on desktop, tablet, and mobile devices.
+-   **Dark Mode:** Switch between light and dark themes for comfortable viewing.
+-   **Blog:** Read articles and updates related to AI and Cybersecurity.
+-   **Fast & Lightweight:** Built with modern web technologies for optimal performance.
+
+## 🚀 Tech Stack
+
+-   **Frontend:** React
+-   **Build Tool:** Vite
+-   **Styling:** Tailwind CSS
+-   **Routing:** React Router
+-   **Deployment:** GitHub Pages
+
+## 🛠️ Getting Started
+
+Follow these instructions to get a local copy up and running for development and testing purposes.
+
+### Prerequisites
+
+You need to have Node.js (version 20 or higher) and npm installed on your machine.
+
+### Installation & Setup
+
+1.  **Clone the repository:**
+    ```sh
+    git clone https://github.com/Farhan-Ansari-1/fxtoor.git
+    ```
+2.  **Navigate to the project directory:**
+    ```sh
+    cd fxtoor
+    ```
+3.  **Install NPM packages:**
+    ```sh
+    npm install
+    ```
+
+## 📜 Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run dev`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the app in development mode. Open http://localhost:5173 (or the port shown in your terminal) to view it in your browser. The page will automatically reload when you make changes.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `dist` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm run preview`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Runs a local server to preview the production build from the `dist` folder.
 
-### `npm run eject`
+## 🚢 Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project is automatically deployed to GitHub Pages whenever a push is made to the `main` branch. The deployment workflow is defined in the `.github/deploy.yml` file.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
