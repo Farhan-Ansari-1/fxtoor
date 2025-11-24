@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://farhan-ansari-1.github.io/fxtoor/sitemap.xml
