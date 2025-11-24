@@ -1,0 +1,44 @@
+# d:\fxtoor\.github\workflows\blog_automation.yml
+
+name: 'Generate New Blog Post'
+
+on:
+  # यह एक्शन को GitHub UI में "Actions" टैब से मैन्युअल रूप से चलाने की अनुमति देता है।
+  workflow_dispatch:
+
+  # आप चाहें तो इसे शेड्यूल पर भी चला सकते हैं।
+  # नीचे दी गई लाइन को अनकम्मेंट करने पर यह हर सोमवार सुबह 7 बजे UTC में चलेगा।
+  # schedule:
+  #   - cron: '0 7 * * 1'
+
+# GITHUB_TOKEN के लिए अनुमतियाँ सेट करता है
+permissions:
+  contents: write # रिपॉजिटरी में बदलाव (जैसे कमिट और पुश) करने की अनुमति देता है
+
+jobs:
+  generate-post:
+    runs-on: ubuntu-latest # यह एक्शन एक वर्चुअल मशीन पर चलेगा।
+
+    steps:
+      # स्टेप 1: आपके रिपॉजिटरी के कोड को वर्चुअल मशीन पर लाता है।
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # स्टेप 2: Python का एनवायरनमेंट सेट करता है।
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' # Python का वर्जन
+
+      # स्टेप 3: requirements.txt में दी गई लाइब्रेरी को इनस्टॉल करता है।
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # स्टेप 4: हमारी Python स्क्रिप्ट को चलाता है।
+      - name: Run Blog Agent
+        run: python scripts/blog_agent.py
+        env:
+          # GEMINI_API_KEY को GitHub Secrets से सुरक्षित रूप से लेता है।
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
