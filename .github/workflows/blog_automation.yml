@@ -6,10 +6,10 @@ on:
   # Yeh option aapko GitHub ke “Actions” tab se workflow ko manually chalane deta hai.
   workflow_dispatch:
 
-  # Optional: Agar aap chaho to isko schedule per bhi chala sakte ho.
-  # Neeche waali lines uncomment karne par yeh har Monday 7:00 AM UTC per chalega.
-  # schedule:
-  #   - cron: "0 7 * * 1"
+  # Ise schedule per chalaane ke liye.
+  # Yeh har Monday subah 7:00 AM UTC (India ke time ke hisaab se 12:30 PM) per chalega.
+  schedule:
+    - cron: "0 7 * * 1"
 
 # GITHUB_TOKEN ki permissions set kar raha hai
 permissions:
