@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,4 +6,25 @@
   body {
     @apply bg-gray-100 text-gray-900;
   }
+}
+/* src/index.css */
+
+/* ... aapka purana CSS code ... */
+
+/* Blog Post ke naye styles */
+.markdown-content strong {
+  @apply text-yellow-400; /* Bold text ko peela rang dega */
+}
+
+.markdown-content em {
+  @apply text-sky-400; /* Italic text ko aasmani rang dega */
+}
+
+.markdown-content blockquote {
+  @apply bg-slate-800 border-l-4 border-yellow-500 p-4 my-4 rounded-r-lg;
+  /* Blockquote (Pro Tip) ko ek sundar background aur border dega */
+}
+
+.markdown-content blockquote p {
+  @apply text-slate-300; /* Blockquote ke andar ke text ka rang */
 }

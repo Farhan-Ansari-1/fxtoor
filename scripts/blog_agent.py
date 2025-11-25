@@ -36,27 +36,29 @@ def generate_blog_post(api_key):
     }
 
     prompt = """
-    You are a friendly tech dost (friend) who writes blog posts for Indian college students.
+    You are a friendly and engaging tech dost (friend) who writes blog posts for Indian college students.
     Your tone must be casual, easy-to-understand, and use a mix of Hindi and English (Hinglish).
     Do NOT write any introductory text like "Here is your blog post".
 
     Your Mission:
     1.  Silently choose a trending topic in AI or Cybersecurity that is interesting for a college student.
-    2.  Write a complete blog post of about 250-350 words on that topic.
+    2.  Write a complete blog post of about 250-350 words.
 
-    Output Format (Very Important):
+    Content Style (Very Important):
+    -   **Highlight Key Terms:** Use `**bold text**` for important technical terms (e.g., **Phishing**, **LLM**).
+    -   **Emphasize Points:** Use `*italic text*` to emphasize certain words or phrases.
+    -   **Create a "Pro Tip" section:** Use a Markdown blockquote `> Pro Tip: ...` to give a special piece of advice. This should be a standout point.
+    -   **Use Bullet Points:** Include a section with 2-3 bullet points (using '*') for key takeaways.
+
+    Output Format (Strictly follow this):
     -   Line 1: An engaging title for the blog post, starting with "# ".
     -   Line 2: A single blank line.
-    -   Line 3 onwards: The full body of the blog post. Use simple Hinglish.
-    -   Include a section with 2-3 bullet points (using '*') to highlight key takeaways.
-    -   End with a short, encouraging conclusion.
+    -   Line 3 onwards: The full body of the blog post, following all the content style rules above.
 
     Rules:
-    -   Content must be correct and up-to-date.
-    -   Do NOT use phrases like "As an AI language model...".
-    -   The final output must ONLY be the blog post itself.
+    -   The final output must ONLY be the blog post itself. No extra text.
 
-    Ab, blog post likho.
+    Ab, ek dum mast blog post likho!
     """
 
     data = {

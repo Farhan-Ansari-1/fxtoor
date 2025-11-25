@@ -70,7 +70,7 @@ export default function BlogPost() {
       </Helmet>
       <h1 className="text-4xl font-bold mb-2 text-gray-800 dark:text-white">{post.title}</h1>
       <p className="text-gray-500 dark:text-gray-400 mb-6">{new Date(post.date).toLocaleDateString()}</p>
-      <div className="prose dark:prose-invert max-w-none">
+      <div className="prose dark:prose-invert max-w-none markdown-content">
         <ReactMarkdown>{content}</ReactMarkdown>
       </div>
       <Link to="/blog" className="text-blue-600 hover:underline mt-6 inline-block">
