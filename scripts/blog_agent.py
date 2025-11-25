@@ -1,9 +1,9 @@
 import os
 import json
 import re
+import requests # google-generativeai ki jagah requests ka istemal
 from datetime import datetime
 import subprocess
-import google.generativeai as genai
 from dotenv import load_dotenv
 
 # --- Configuration ---
@@ -24,45 +24,71 @@ def configure_git():
         pass
 
 
-def generate_blog_post():
-    """Gemini 2.5 Pro se trending AI ya Cybersecurity topic par blog post generate karta hai."""
-    print("Blog post generate ho raha hai...")
+def generate_blog_post(api_key):
+    """Gemini API ko direct call karke blog post generate karta hai."""
+    print("Blog post generate ho raha hai (direct API call)...")
+
+    # v1beta endpoint ka istemal kar rahe hain jo sabse stable hai
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={api_key}"
+
+    headers = {
+        "Content-Type": "application/json"
+    }
+
+    prompt = """
+    You are a professional tech blogger. Your only task is to write a high-quality blog post.
+    Do NOT write any introductory text like "Here is your blog post" or any other meta-commentary.
+
+    Your Mission:
+    1.  First, silently choose a fresh and interesting trending topic from ONE of the following categories:
+        - Cybersecurity (e.g., new malware, phishing techniques, zero-day exploits)
+        - Artificial Intelligence (e.g., new AI tools, LLM updates, AI in automation)
+        - Threat Intelligence or Pentesting
+        (Important: Choose a different, non-generic topic each time.)
+
+    2.  Then, write a complete blog post of about 200-300 words on the chosen topic.
+
+    Output Format (Strictly follow this):
+    -   Line 1: An engaging title for the blog post, starting with "# ".
+    -   Line 2: A single blank line.
+    -   Line 3 onwards: The full body of the blog post, written in simple and clear language. It must end with a concluding paragraph.
+
+    Rules:
+    -   The content must be factually correct and up-to-date.
+    -   Do NOT use phrases like "As an AI language model...".
+    -   The final output must ONLY be the blog post itself, starting with the title. No extra text.
+
+    Now, write the blog post.
+    """
+
+    data = {
+        "contents": [{
+            "parts": [{
+                "text": prompt
+            }]
+        }]
+    }
+
     try:
-        # Sabse naye aur powerful model ka istemal kar rahe hain
-        model = genai.GenerativeModel('gemini-1.5-pro-latest')
+        response = requests.post(url, headers=headers, json=data, timeout=60)
+        response.raise_for_status() # Agar 4xx ya 5xx error ho to exception raise karega
 
-        prompt = """
-You are a professional tech blogger. Your only task is to write a high-quality blog post.
-Do NOT write any introductory text like "Here is your blog post" or any other meta-commentary.
+        result = response.json()
 
-Your Mission:
-1.  First, silently choose a fresh and interesting trending topic from ONE of the following categories:
-    - Cybersecurity (e.g., new malware, phishing techniques, zero-day exploits)
-    - Artificial Intelligence (e.g., new AI tools, LLM updates, AI in automation)
-    - Threat Intelligence or Pentesting
-    (Important: Choose a different, non-generic topic each time.)
-
-2.  Then, write a complete blog post of about 200-300 words on the chosen topic.
-
-Output Format (Strictly follow this):
--   Line 1: An engaging title for the blog post, starting with "# ".
--   Line 2: A single blank line.
--   Line 3 onwards: The full body of the blog post, written in simple and clear language. It must end with a concluding paragraph.
-
-Rules:
--   The content must be factually correct and up-to-date.
--   Do NOT use phrases like "As an AI language model...".
--   The final output must ONLY be the blog post itself, starting with the title. No extra text.
-
-Now, write the blog post.
-"""
-
-        response = model.generate_content(prompt)
+        # API response se text extract karna
+        content = result['candidates'][0]['content']['parts'][0]['text']
         print("Blog post generate ho gaya!")
-        return response.text
+        return content
 
-    except Exception as e:
-        print(f"Blog generate karte waqt error: {e}")
+    except requests.exceptions.RequestException as e:
+        print(f"API call karte waqt error: {e}")
+        # Agar response me body ho to use bhi print karein
+        if e.response is not None:
+            print(f"Error Response Body: {e.response.text}")
+        return None
+    except (KeyError, IndexError) as e:
+        print(f"API response ka format ajeeb hai: {e}")
+        print(f"Full Response: {result}")
         return None
 
 
@@ -142,15 +168,16 @@ def main():
         print("GEMINI_API_KEY missing!")
         return
 
-    genai.configure(api_key=api_key)
+    # Ab hum genai.configure() nahi kar rahe
 
     configure_git()
 
-    blog = generate_blog_post()
+    blog = generate_blog_post(api_key) # API key ko function me pass kar rahe hain
     if blog:
         saved = parse_and_save_post(blog)
         if saved:
-            push_to_github(saved, f"feat(blog): Add new post '{saved[1]}'")
+            slug_from_path = os.path.basename(saved[1]).replace('.md', '')
+            push_to_github(saved, f"feat(blog): Add new post '{slug_from_path}'")
 
 
 if __name__ == "__main__":
