@@ -1,44 +1,47 @@
 # d:\fxtoor\.github\workflows\blog_automation.yml
 
-name: 'Generate New Blog Post'
+name: "Generate New Blog Post"
 
 on:
-  # यह एक्शन को GitHub UI में "Actions" टैब से मैन्युअल रूप से चलाने की अनुमति देता है।
+  # Yeh option aapko GitHub ke “Actions” tab se workflow ko manually chalane deta hai.
   workflow_dispatch:
 
-  # आप चाहें तो इसे शेड्यूल पर भी चला सकते हैं।
-  # नीचे दी गई लाइन को अनकम्मेंट करने पर यह हर सोमवार सुबह 7 बजे UTC में चलेगा।
+  # Optional: Agar aap chaho to isko schedule per bhi chala sakte ho.
+  # Neeche waali lines uncomment karne par yeh har Monday 7:00 AM UTC per chalega.
   # schedule:
-  #   - cron: '0 7 * * 1'
+  #   - cron: "0 7 * * 1"
 
-# GITHUB_TOKEN के लिए अनुमतियाँ सेट करता है
+# GITHUB_TOKEN ki permissions set kar raha hai
 permissions:
-  contents: write # रिपॉजिटरी में बदलाव (जैसे कमिट और पुश) करने की अनुमति देता है
+  contents: write   # Repo me commit aur push karne ki permission deta hai
 
 jobs:
   generate-post:
-    runs-on: ubuntu-latest # यह एक्शन एक वर्चुअल मशीन पर चलेगा।
+    runs-on: ubuntu-latest   # Workflow ek Ubuntu virtual machine per chalega
 
     steps:
-      # स्टेप 1: आपके रिपॉजिटरी के कोड को वर्चुअल मशीन पर लाता है।
+      # Step 1: Repo ka code virtual machine me checkout karta hai
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # Python script ko git push karne ke liye token zaroori hai
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      # स्टेप 2: Python का एनवायरनमेंट सेट करता है।
+      # Step 2: Python environment set karta hai
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10' # Python का वर्जन
+          python-version: "3.10"
 
-      # स्टेप 3: requirements.txt में दी गई लाइब्रेरी को इनस्टॉल करता है।
+      # Step 3: requirements.txt me listed sabhi Python packages install karta hai
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # स्टेप 4: हमारी Python स्क्रिप्ट को चलाता है।
+      # Step 4: Blog generate karne wali Python script chalata hai
       - name: Run Blog Agent
         run: python scripts/blog_agent.py
         env:
-          # GEMINI_API_KEY को GitHub Secrets से सुरक्षित रूप से लेता है।
+          # Gemini API key ko GitHub Secrets se secure tarike se load karta hai
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
