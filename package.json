@@ -28,7 +28,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite --port 5173",
-    "build": "vite build",
+    "build": "vite build --base=/fxtoor/",
     "preview": "vite preview"
   },
   "browserslist": {
