@@ -28,7 +28,7 @@ def generate_blog_post(api_key):
     """Gemini API ko direct call karke blog post generate karta hai."""
     print("Blog post generate ho raha hai (direct API call)...")
 
-    # Sahi model 'gemini-1.0-pro' ke saath v1beta endpoint ka istemal
+    # Sahi aur stable model 'gemini-1.0-pro' ka istemal kar rahe hain.
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key={api_key}"
 
     headers = {
