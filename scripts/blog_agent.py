@@ -29,7 +29,7 @@ def generate_blog_post():
     print("Blog post generate ho raha hai...")
     try:
         # Sabse naye aur powerful model ka istemal kar rahe hain
-        model = genai.GenerativeModel('gemini-2.5-pro-latest')
+        model = genai.GenerativeModel('gemini-1.5-pro-latest')
 
         prompt = """
 You are a professional tech blogger. Your only task is to write a high-quality blog post.
