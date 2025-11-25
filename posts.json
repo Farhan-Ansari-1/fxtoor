@@ -1,7 +1,4 @@
 [
-  
-  
-
   {
     "id": "1",
     "title": "Top 5 AI Tools jo Har Tech Enthusiast Ko Use Karne Chahiye",
@@ -9,12 +6,18 @@
     "date": "2025-09-11",
     "excerpt": "Yeh blog post aapko best AI tools ke baare mein batayega jo productivity aur creativity badhate hain."
   },
-
-   {
+  {
     "id": "2",
     "title": "Cyber Security Ke Basic Points Jo Har User Ko Janna Chahiye",
     "slug": "cyber-security",
     "date": "2025-09-11",
     "excerpt": "Yeh blog post aapko cyber security ke basic points ke baare mein batayega jo productivity aur creativity badhate hain."
+  },
+  {
+    "id": "3",
+    "title": "Overwhelmed by MFA? You Might Be Under Attack",
+    "slug": "overwhelmed-by-mfa-you-might-be-under-attack",
+    "date": "2025-11-25",
+    "excerpt": "Multi-Factor Authentication (MFA) is one of our best defenses against account takeovers. That simple push notification on your phone acts..."
   }
 ]
