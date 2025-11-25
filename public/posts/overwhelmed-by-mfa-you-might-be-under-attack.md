@@ -1,0 +1,7 @@
+Multi-Factor Authentication (MFA) is one of our best defenses against account takeovers. That simple push notification on your phone acts as a digital gatekeeper. But what happens when attackers turn that gatekeeper against you? Welcome to the world of MFA fatigue, also known as "MFA bombing."
+
+This increasingly common attack preys on human nature. After stealing your password, a threat actor initiates a login attempt. This sends a legitimate MFA push notification to your device. But they don't stop at one. They bombard your phone with dozens, or even hundreds, of approval requests. The goal is simple: to annoy, confuse, and overwhelm you into accidentally tapping "Approve" just to make the notifications stop. Once you do, the attacker is in.
+
+So, how do you defend against this relentless tactic? The golden rule is to never approve an MFA request you didn't personally initiate. If you receive an unexpected prompt, deny it immediately and change your account password. Even better, where possible, switch to more sophisticated MFA methods. Options like number matching, which requires you to enter a specific code shown on the login screen, or physical security keys are not vulnerable to simple fatigue attacks.
+
+MFA remains a critical security layer, but we must be aware of how attackers are evolving to bypass it. Staying vigilant and upgrading your authentication methods can ensure your digital defenses don't become a source of frustration and vulnerability.
