@@ -1,8 +1,8 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import SearchBar from '../components/SearchBar';
-import FilterBar from '../components/FilterBar';
-import ToolList from './../components/ToolList'; // Corrected casing
+import FilterBar from '../components/FilterBar'; 
+import ToolList from '../components/ToolList';
 import SkeletonCard from '../components/SkeletonCard';
 
 export default function Home() {
