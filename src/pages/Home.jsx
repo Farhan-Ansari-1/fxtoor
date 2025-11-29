@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import SearchBar from './../components/SearchBar';
-import FilterBar from './../components/FilterBar';
+import SearchBar from './../components/searchBar'; // Case-sensitivity fix
+import FilterBar from './../components/filterBar'; // Case-sensitivity fix
 import ToolList from './../components/ToolList';
 import SkeletonCard from './../components/SkeletonCard';
 
