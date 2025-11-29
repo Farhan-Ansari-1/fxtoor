@@ -1,9 +1,9 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import SearchBar from '../components/SearchBar'; // Corrected casing
-import FilterBar from '../components/FilterBar'; // Corrected casing
+import SearchBar from '../components/SearchBar';
+import FilterBar from '../components/FilterBar';
 import ToolList from './../components/ToolList'; // Corrected casing
-import SkeletonCard from './../components/SkeletonCard';
+import SkeletonCard from '../components/SkeletonCard';
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
