@@ -4,7 +4,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import { ThemeProvider } from './context/ThemeContext';
 
 // Components aur Pages ko import karein
-import Header from './components/Header'; // Navbar ki jagah Header import karein
+import Header from './components/header'; // Case-sensitivity ke liye fix kiya
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
