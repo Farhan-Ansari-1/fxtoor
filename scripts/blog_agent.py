@@ -4,6 +4,7 @@ import re
 import requests # google-generativeai ki jagah requests ka istemal
 from datetime import datetime
 import subprocess
+import sys
 from dotenv import load_dotenv
 
 # --- Configuration ---
@@ -29,7 +30,7 @@ def generate_blog_post(api_key):
     print("Blog post generate ho raha hai (direct API call)...")
 
     # Sahi aur stable model 'gemini-1.0-pro' ka istemal kar rahe hain.
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key={api_key}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
 
     headers = {
         "Content-Type": "application/json"
@@ -178,6 +179,9 @@ def main():
         if saved:
             slug_from_path = os.path.basename(saved[1]).replace('.md', '')
             push_to_github(saved, f"feat(blog): Add new post '{slug_from_path}'")
+    else:
+        print("Error: Blog content generate nahi hua. Workflow fail kar rahe hain.")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
