@@ -1780,5 +1780,14 @@
     "description": "A cloud-native runtime security project, the de facto Kubernetes threat detection engine. It detects unexpected application behavior and alerts on threats at runtime.",
     "link": "https://falco.org/",
     "type": "Free"
+  },
+  {
+    "id": "tool-199",
+    "name": "Auferet",
+    "mainCategory": "AI",
+    "subCategory": "Creative & Fun",
+    "description": "AI game master for solo text adventures and tabletop RPGs that remembers your characters and story and reads your own uploaded lore.",
+    "link": "https://auferet.com",
+    "type": "Freemium"
   }
 ]
